@@ -3,9 +3,20 @@
   "version": "0.1.0",
   "description": "This website is a portfolio showcasing my work.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ary-na/ap.git"
   },
+  "keywords": [
+    "Arian Najafi Yamchelo",
+    "Web Developer",
+    "Web Designer"
+  ],
   "author": "Arian Najafi Yamchelo",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ary-na/ap/issues"
+  },
+  "homepage": "https://github.com/ary-na/ap#readme"
 }
