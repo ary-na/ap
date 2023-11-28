@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "This website is a portfolio showcasing my work.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ary-na/ap.git"
@@ -18,5 +21,15 @@
   "bugs": {
     "url": "https://github.com/ary-na/ap/issues"
   },
-  "homepage": "https://github.com/ary-na/ap#readme"
+  "homepage": "https://github.com/ary-na/ap#readme",
+  "dependencies": {
+    "@shoelace-style/shoelace": "^2.12.0",
+    "bootstrap": "^5.3.2",
+    "gsap": "^3.12.2",
+    "shoelace": "^0.1.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.69.5"
+  }
 }
