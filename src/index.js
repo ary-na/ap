@@ -1,6 +1,5 @@
-
 // Import styles
-import './static/scss/main.scss'
+import './scss/main.scss'
 
 // Import Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css'

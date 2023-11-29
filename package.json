@@ -2,10 +2,10 @@
   "name": "ap",
   "version": "0.1.0",
   "description": "This website is a portfolio showcasing my work.",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,8 @@
     "shoelace": "^0.1.0"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.5",
+    "@parcel/transformer-sass": "^2.10.3",
+    "parcel": "^2.10.3",
     "sass": "^1.69.5"
   }
 }
