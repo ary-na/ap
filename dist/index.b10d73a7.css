@@ -1,3 +1,11 @@
+:root {
+  --primary-bg-color: pink;
+}
+
+body {
+  background-color: red;
+}
+
 :root, [data-bs-theme="light"] {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -13762,12 +13770,4 @@ textarea.form-control-lg {
   box-shadow: var(--sl-shadow-large);
 }
 
-:root {
-  --primary-bg-color: pink;
-}
-
-body {
-  background-color: #ff69b4;
-}
-
-/*# sourceMappingURL=index.ab0485ab.css.map */
+/*# sourceMappingURL=index.b10d73a7.css.map */
