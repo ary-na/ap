@@ -575,18 +575,18 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"8lqZg":[function(require,module,exports) {
-// Import styles
-var _mainScss = require("./scss/main.scss");
-// Import Bootstrap CSS
-var _bootstrapMinCss = require("bootstrap/dist/css/bootstrap.min.css");
 // Import Bootstrap JS
 var _bootstrapBundleMinJs = require("bootstrap/dist/js/bootstrap.bundle.min.js");
-// Import Shoelace Light theme CSS
-var _lightCss = require("@shoelace-style/shoelace/dist/themes/light.css");
 // Import Shoelace JS
 var _shoelaceJs = require("@shoelace-style/shoelace/dist/shoelace.js");
+// Import Bootstrap CSS
+var _bootstrapMinCss = require("bootstrap/dist/css/bootstrap.min.css");
+// Import Shoelace Light theme CSS
+var _lightCss = require("@shoelace-style/shoelace/dist/themes/light.css");
+// Import styles
+var _mainScss = require("./scss/main.scss");
 
-},{"bootstrap/dist/css/bootstrap.min.css":"i5LP7","bootstrap/dist/js/bootstrap.bundle.min.js":"gCRej","@shoelace-style/shoelace/dist/themes/light.css":"jjR64","@shoelace-style/shoelace/dist/shoelace.js":"6TTGm","./scss/main.scss":"4Pg3x"}],"i5LP7":[function() {},{}],"gCRej":[function(require,module,exports) {
+},{"bootstrap/dist/css/bootstrap.min.css":"i5LP7","bootstrap/dist/js/bootstrap.bundle.min.js":"gCRej","@shoelace-style/shoelace/dist/themes/light.css":"jjR64","./scss/main.scss":"4Pg3x","@shoelace-style/shoelace/dist/shoelace.js":"6TTGm"}],"i5LP7":[function() {},{}],"gCRej":[function(require,module,exports) {
 /*!
   * Bootstrap v5.3.2 (https://getbootstrap.com/)
   * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
@@ -3619,7 +3619,7 @@ var _shoelaceJs = require("@shoelace-style/shoelace/dist/shoelace.js");
     };
 });
 
-},{}],"jjR64":[function() {},{}],"6TTGm":[function(require,module,exports) {
+},{}],"jjR64":[function() {},{}],"4Pg3x":[function() {},{}],"6TTGm":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "SlAlert", ()=>(0, _chunkJ7TQ3TIAJs.alert_default));
@@ -31697,6 +31697,6 @@ var animated_image_styles_default = (0, _lit.css)`
   }
 `;
 
-},{"./chunk.TUVJKY7S.js":"dAJLo","lit":"4antt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4Pg3x":[function() {},{}]},["icZzK","8lqZg"], "8lqZg", "parcelRequire1323")
+},{"./chunk.TUVJKY7S.js":"dAJLo","lit":"4antt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["icZzK","8lqZg"], "8lqZg", "parcelRequire1323")
 
 //# sourceMappingURL=index.975ef6c8.js.map

@@ -13766,8 +13766,22 @@ textarea.form-control-lg {
   --primary-bg-color: pink;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: #ff69b4;
+  background-color: pink;
+  font-size: 5em;
+  display: block;
+}
+
+sl-icon::part(base) {
+  background-color: red;
+  font-size: 30em;
+  display: block;
 }
 
 /*# sourceMappingURL=index.ab0485ab.css.map */

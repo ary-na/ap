@@ -12,9 +12,6 @@
 <body>
 
 <nav>
-    <sl-icon name="icon-name-here">fsdfsdf</sl-icon>
-
-    <sl-icon-button name="list" label="Menu"></sl-icon-button>
     <ul class="list-unstyled">
         <li><a href="/">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -24,6 +21,32 @@
 </nav>
 
 <main>
+    <sl-icon name="star"></sl-icon>
+
+    <sl-icon name="heart"></sl-icon>
+    <sl-icon name="heart"></sl-icon>
+    <sl-icon name="heart"></sl-icon>
+
+    <sl-drawer label="Drawer" class="drawer-overview">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <sl-button slot="footer" variant="primary">Close</sl-button>
+    </sl-drawer>
+
+    <sl-button>Open Drawer</sl-button>
+    <sl-icon name="heart"></sl-icon>
+    <sl-icon name="heart"></sl-icon>
+    <sl-icon name="heart"></sl-icon>
+
+
+    <script>const drawer = document.querySelector(".drawer-overview");
+const openButton = drawer.nextElementSibling;
+const closeButton = drawer.querySelector('sl-button[variant="primary"]');
+openButton.addEventListener("click", ()=>drawer.show());
+closeButton.addEventListener("click", ()=>drawer.hide());
+
+</script>
+
+
     <section>
         <h1>Welcome...</h1>
         <p>Arian N. Yamchelo Portfolio!</p>
