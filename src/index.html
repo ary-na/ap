@@ -7,7 +7,8 @@
     <meta name="author" content="Arian Najafi Yamchelo">
     <meta name="description" content="This website is a portfolio showcasing my work.">
     <meta name="keywords" content="Arian Najafi Yamchelo, Web Developer, Web Designer">
-    <link rel="icon" href="static/logos/logo.ico">
+    <script type="module" src="index.js"></script>
+    <link rel="icon" href="images/logos/logo.ico">
 </head>
 <body>
 
@@ -21,33 +22,13 @@
 </nav>
 
 <main>
-    <sl-icon name="star"></sl-icon>
-
     <sl-icon name="heart"></sl-icon>
     <sl-icon name="heart"></sl-icon>
     <sl-icon name="heart"></sl-icon>
-
-    <sl-drawer label="Drawer" class="drawer-overview">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        <sl-button slot="footer" variant="primary">Close</sl-button>
-    </sl-drawer>
-
-    <sl-button>Open Drawer</sl-button>
     <sl-icon name="heart"></sl-icon>
     <sl-icon name="heart"></sl-icon>
     <sl-icon name="heart"></sl-icon>
-
-
-    <script>
-        const drawer = document.querySelector('.drawer-overview');
-        const openButton = drawer.nextElementSibling;
-        const closeButton = drawer.querySelector('sl-button[variant="primary"]');
-
-        openButton.addEventListener('click', () => drawer.show());
-        closeButton.addEventListener('click', () => drawer.hide());
-    </script>
-
-
+    <sl-icon name="heart"></sl-icon>
     <section>
         <h1>Welcome...</h1>
         <p>Arian N. Yamchelo Portfolio!</p>
@@ -88,7 +69,5 @@
 <footer>
     <p>&copy; 2023 AP</p>
 </footer>
-
-<script type="module" src="index.js"></script>
 </body>
 </html>

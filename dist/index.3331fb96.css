@@ -13778,10 +13778,4 @@ body {
   display: block;
 }
 
-sl-icon::part(base) {
-  background-color: red;
-  font-size: 30em;
-  display: block;
-}
-
 /*# sourceMappingURL=index.3331fb96.css.map */
