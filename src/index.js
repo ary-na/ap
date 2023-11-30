@@ -10,11 +10,14 @@ import '@shoelace-style/shoelace/dist/themes/light.css'
 // Import Shoelace JS.
 import '@shoelace-style/shoelace/dist/shoelace.js'
 
+// Import Bootstrap CSS.
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 // Import Bootstrap JS.
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
-// Import Bootstrap CSS.
-import 'bootstrap/dist/css/bootstrap.min.css'
+// Import project's JS files.
+import './js/navMenu.js'
 
 // Import styles.
 import './scss/main.scss'

@@ -13763,7 +13763,23 @@ textarea.form-control-lg {
 }
 
 :root {
-  --primary-bg-color: pink;
+  --primary-font-family: "Inter", sans-serif;
+  --brand-font-family: "Raleway", sans-serif;
+  --primary-color: #f8f7ff;
+  --brand-color: #9381ff;
+  --primary-txt-color: #1a0b36;
+  --link-color: #9381ff;
+  --sl-color-primary-50: white;
+  --sl-color-primary-100: white;
+  --sl-color-primary-200: #eae7ff;
+  --sl-color-primary-300: #bfb4ff;
+  --sl-color-primary-400: #9381ff;
+  --sl-color-primary-500: #674eff;
+  --sl-color-primary-600: #3c1bff;
+  --sl-color-primary-700: #2100e7;
+  --sl-color-primary-800: #1a00b4;
+  --sl-color-primary-900: #120081;
+  --sl-focus-ring-color-primary: #9381ff1a;
 }
 
 * {
@@ -13772,10 +13788,13 @@ textarea.form-control-lg {
   padding: 0;
 }
 
+html {
+  background-color: var(--brand-color);
+}
+
 body {
-  background-color: pink;
-  font-size: 5em;
-  display: block;
+  background-color: var(--primary-color);
+  color: #1a0b36;
 }
 
 /*# sourceMappingURL=index.3331fb96.css.map */

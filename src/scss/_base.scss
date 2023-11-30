@@ -4,8 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: var(--brand-color);
+}
+
 body {
-  background-color: pink;
-  font-size: 5em;
-  display: block;
+  background-color: var(--primary-color);
+  color: #1a0b36;
 }

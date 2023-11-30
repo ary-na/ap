@@ -581,16 +581,18 @@ var _basePath = require("@shoelace-style/shoelace/dist/utilities/base-path");
 var _lightCss = require("@shoelace-style/shoelace/dist/themes/light.css");
 // Import Shoelace JS.
 var _shoelaceJs = require("@shoelace-style/shoelace/dist/shoelace.js");
-// Import Bootstrap JS.
-var _bootstrapBundleMinJs = require("bootstrap/dist/js/bootstrap.bundle.min.js");
 // Import Bootstrap CSS.
 var _bootstrapMinCss = require("bootstrap/dist/css/bootstrap.min.css");
+// Import Bootstrap JS.
+var _bootstrapBundleMinJs = require("bootstrap/dist/js/bootstrap.bundle.min.js");
+// Import project's JS files.
+var _navMenuJs = require("./js/navMenu.js");
 // Import styles.
 var _mainScss = require("./scss/main.scss");
 // Set the base path to the folder with copied Shoelace's assets.
 (0, _basePath.setBasePath)("/shoelace");
 
-},{"@shoelace-style/shoelace/dist/utilities/base-path":"67MCn","@shoelace-style/shoelace/dist/themes/light.css":"jjR64","@shoelace-style/shoelace/dist/shoelace.js":"6TTGm","bootstrap/dist/js/bootstrap.bundle.min.js":"gCRej","bootstrap/dist/css/bootstrap.min.css":"i5LP7","./scss/main.scss":"4Pg3x"}],"67MCn":[function(require,module,exports) {
+},{"@shoelace-style/shoelace/dist/utilities/base-path":"67MCn","@shoelace-style/shoelace/dist/themes/light.css":"jjR64","@shoelace-style/shoelace/dist/shoelace.js":"6TTGm","bootstrap/dist/css/bootstrap.min.css":"i5LP7","bootstrap/dist/js/bootstrap.bundle.min.js":"gCRej","./js/navMenu.js":"6iHCu","./scss/main.scss":"4Pg3x"}],"67MCn":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getBasePath", ()=>(0, _chunk3Y6SB6QSJs.getBasePath));
@@ -28676,7 +28678,7 @@ var animated_image_styles_default = (0, _lit.css)`
   }
 `;
 
-},{"./chunk.TUVJKY7S.js":"dAJLo","lit":"4antt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gCRej":[function(require,module,exports) {
+},{"./chunk.TUVJKY7S.js":"dAJLo","lit":"4antt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"i5LP7":[function() {},{}],"gCRej":[function(require,module,exports) {
 /*!
   * Bootstrap v5.3.2 (https://getbootstrap.com/)
   * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
@@ -31709,6 +31711,15 @@ var animated_image_styles_default = (0, _lit.css)`
     };
 });
 
-},{}],"i5LP7":[function() {},{}],"4Pg3x":[function() {},{}]},["icZzK","8lqZg"], "8lqZg", "parcelRequire1323")
+},{}],"6iHCu":[function(require,module,exports) {
+const slIconButton = document.querySelector("nav > div > sl-icon-button");
+const slDrawer = document.querySelector("nav > sl-drawer");
+const menuItems = document.querySelectorAll("sl-drawer > ul > li a");
+// Show drawer on hamburger menu icon click.
+slIconButton.addEventListener("click", ()=>slDrawer.show());
+// Hide drawer on menu item click.
+menuItems.forEach((menuItem)=>menuItem.addEventListener("click", async ()=>await slDrawer.hide()));
+
+},{}],"4Pg3x":[function() {},{}]},["icZzK","8lqZg"], "8lqZg", "parcelRequire1323")
 
 //# sourceMappingURL=index.975ef6c8.js.map

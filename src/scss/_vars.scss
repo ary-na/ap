@@ -1,3 +1,25 @@
 :root {
-  --primary-bg-color: pink;
+  // Fonts
+  --primary-font-family: 'Inter', sans-serif;
+  --brand-font-family: 'Raleway', sans-serif;
+
+  // Colours
+  --primary-color: #f8f7ff;
+  $brand-color: #9381ff;
+  --brand-color: #{$brand-color};
+  --primary-txt-color: #1a0b36;
+  --link-color: #{$brand-color};
+
+  // Shoelace color tokens
+  --sl-color-primary-50: #{lighten($brand-color, 40%)};
+  --sl-color-primary-100: #{lighten($brand-color, 30%)};
+  --sl-color-primary-200: #{lighten($brand-color, 20%)};
+  --sl-color-primary-300: #{lighten($brand-color, 10%)};
+  --sl-color-primary-400: #{$brand-color};
+  --sl-color-primary-500: #{darken($brand-color, 10%)};
+  --sl-color-primary-600: #{darken($brand-color, 20%)};
+  --sl-color-primary-700: #{darken($brand-color, 30%)};
+  --sl-color-primary-800: #{darken($brand-color, 40%)};
+  --sl-color-primary-900: #{darken($brand-color, 50%)};
+  --sl-focus-ring-color-primary: #{rgba($brand-color, 0.1)};
 }
