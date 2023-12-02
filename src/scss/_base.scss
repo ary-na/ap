@@ -1,4 +1,4 @@
-* {
+*, *:before, *:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,12 +10,18 @@ html {
 
 body {
   background-color: var(--primary-color);
-  color: #1a0b36;
+  color: var(--primary-txt-color);
   font-family: var(--primary-font-family);
 }
 
 main {
   section {
     min-height: 100vh;
+  }
+}
+
+nav {
+  ul {
+
   }
 }

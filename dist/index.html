@@ -10,24 +10,26 @@
     <link rel="icon" href="/logo.53c85da4.ico" type="image/x-icon">
 </head>
 
-<body class="container-fluid">
+<body>
 
-<nav>
+<header class="container-xxl">
     <div class="d-flex justify-content-between align-items-center">
         <div class="display-4">A</div>
         <sl-icon-button name="list" label="Menu"></sl-icon-button>
     </div>
-    <sl-drawer label="Arian N. Yamchelo">
-        <ul class="list-unstyled">
-            <li><a href="/">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </sl-drawer>
-</nav>
+    <nav>
+        <sl-drawer label="Arian N. Yamchelo" placement="top">
+            <ul class="list-unstyled">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </sl-drawer>
+    </nav>
+</header>
 
-<main>
+<main class="container-xxl">
     <section>
         <h1>Welcome...</h1>
         <p>Arian N. Yamchelo</p>
@@ -63,8 +65,8 @@
     <p>This is additional content, related to the main content but not part of it.</p>
 </aside>
 
-<footer>
-    <p>&copy; 2023 AP</p>
+<footer class="container-xxl">
+    <p class="mb-0">&copy; 2023 AP</p>
 </footer>
 
 <script src="/index.975ef6c8.js" defer=""></script>

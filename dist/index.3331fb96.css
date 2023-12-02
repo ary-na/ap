@@ -13783,7 +13783,7 @@ textarea.form-control-lg {
   --sl-focus-ring-color-primary: #9381ff1a;
 }
 
-* {
+*, :before, :after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -13795,7 +13795,7 @@ html {
 
 body {
   background-color: var(--primary-color);
-  color: #1a0b36;
+  color: var(--primary-txt-color);
   font-family: var(--primary-font-family);
 }
 
@@ -13803,8 +13803,12 @@ main section {
   min-height: 100vh;
 }
 
-nav sl-icon-button {
-  font-size: 2em;
+sl-icon-button {
+  font-size: 1.5em;
+}
+
+sl-icon-button::part(base) {
+  padding-right: 0;
 }
 
 /*# sourceMappingURL=index.3331fb96.css.map */

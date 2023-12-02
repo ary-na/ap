@@ -31724,11 +31724,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
 });
 
 },{}],"k110A":[function(require,module,exports) {
-const slIconButton = document.querySelector("nav > div > sl-icon-button");
+const slIconButton = document.querySelector("header > div > sl-icon-button");
 const slDrawer = document.querySelector("nav > sl-drawer");
 const drawerItems = document.querySelectorAll("sl-drawer > ul > li a");
 // Show drawer on drawer icon click.
-slIconButton.addEventListener("click", async ()=>await slDrawer.show());
+slIconButton.addEventListener("click", async ()=>{
+    await slDrawer.show();
+});
 // Hide drawer on drawer item click.
 drawerItems.forEach((item)=>item.addEventListener("click", async (e)=>{
         e.preventDefault();

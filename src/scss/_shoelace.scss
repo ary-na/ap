@@ -1,5 +1,7 @@
-nav {
-  sl-icon-button {
-    font-size: 2em;
+sl-icon-button {
+  font-size: 1.5em;
+
+  &::part(base) {
+    padding-right: 0;
   }
 }
