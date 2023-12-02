@@ -586,13 +586,14 @@ var _bootstrapMinCss = require("bootstrap/dist/css/bootstrap.min.css");
 // Import Bootstrap JS.
 var _bootstrapBundleMinJs = require("bootstrap/dist/js/bootstrap.bundle.min.js");
 // Import project's JS files.
-var _navDrawerJs = require("./js/navDrawer.js");
+var _loadBaseUrl = require("./js/utilities/loadBaseUrl");
+var _navDrawer = require("./js/utilities/navDrawer");
 // Import styles.
 var _mainScss = require("./scss/main.scss");
 // Set the base path to the folder with copied Shoelace's assets.
 (0, _basePath.setBasePath)("/shoelace");
 
-},{"@shoelace-style/shoelace/dist/utilities/base-path":"67MCn","@shoelace-style/shoelace/dist/themes/light.css":"jjR64","@shoelace-style/shoelace/dist/shoelace.js":"6TTGm","bootstrap/dist/css/bootstrap.min.css":"i5LP7","bootstrap/dist/js/bootstrap.bundle.min.js":"gCRej","./scss/main.scss":"4Pg3x","./js/navDrawer.js":"1DJzz"}],"67MCn":[function(require,module,exports) {
+},{"@shoelace-style/shoelace/dist/utilities/base-path":"67MCn","@shoelace-style/shoelace/dist/themes/light.css":"jjR64","@shoelace-style/shoelace/dist/shoelace.js":"6TTGm","bootstrap/dist/css/bootstrap.min.css":"i5LP7","bootstrap/dist/js/bootstrap.bundle.min.js":"gCRej","./scss/main.scss":"4Pg3x","./js/utilities/loadBaseUrl":"hr1d0","./js/utilities/navDrawer":"k110A"}],"67MCn":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getBasePath", ()=>(0, _chunk3Y6SB6QSJs.getBasePath));
@@ -31711,14 +31712,34 @@ var animated_image_styles_default = (0, _lit.css)`
     };
 });
 
-},{}],"4Pg3x":[function() {},{}],"1DJzz":[function(require,module,exports) {
+},{}],"4Pg3x":[function() {},{}],"hr1d0":[function(require,module,exports) {
+document.addEventListener("DOMContentLoaded", ()=>{
+    const urlString = window.location.href;
+    // Creating a URL object
+    const url = new URL(urlString);
+    // Removing the path and keeping only the base URL
+    const baseUrl = `${url.protocol}//${url.hostname}${url.port ? `:${url.port}` : ""}`;
+    // Replace the current URL with the one without the hash
+    window.history.replaceState({}, document.title, baseUrl);
+});
+
+},{}],"k110A":[function(require,module,exports) {
 const slIconButton = document.querySelector("nav > div > sl-icon-button");
 const slDrawer = document.querySelector("nav > sl-drawer");
 const drawerItems = document.querySelectorAll("sl-drawer > ul > li a");
-// Show drawer on hamburger menu icon click.
-slIconButton.addEventListener("click", ()=>slDrawer.show());
-// Hide drawer on menu item click.
-drawerItems.forEach((item)=>item.addEventListener("click", async ()=>await slDrawer.hide()));
+// Show drawer on drawer icon click.
+slIconButton.addEventListener("click", async ()=>await slDrawer.show());
+// Hide drawer on drawer item click.
+drawerItems.forEach((item)=>item.addEventListener("click", async (e)=>{
+        e.preventDefault();
+        await slDrawer.hide();
+        const itemAttr = item.getAttribute("href");
+        if (itemAttr === "#about" || itemAttr === "#work" || itemAttr === "#contact") document.querySelector(itemAttr).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+        else window.location.reload();
+    }));
 
 },{}]},["icZzK","8lqZg"], "8lqZg", "parcelRequire1323")
 

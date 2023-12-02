@@ -11,4 +11,11 @@ html {
 body {
   background-color: var(--primary-color);
   color: #1a0b36;
+  font-family: var(--primary-font-family);
+}
+
+main {
+  section {
+    min-height: 100vh;
+  }
 }
