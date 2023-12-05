@@ -20,8 +20,46 @@ main {
   }
 }
 
-nav {
-  ul {
+h2 {
+  font-family: var(--brand-font-family);
+  font-size: 20px;
+}
 
+header {
+  padding: 20px;
+  div {
+    padding: 0;
+    margin: 0;
+
+    a {
+      text-decoration: none;
+
+      div {
+        font-family: var(--brand-font-family);
+        color: var(--brand-color);
+        font-size: 20px;
+        padding: 0;
+      }
+    }
   }
+
+  nav {
+    ul {
+      a {
+        text-decoration: none;
+        color: var(--sl-color-primary-200);
+        transition: 0.5s;
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
 }

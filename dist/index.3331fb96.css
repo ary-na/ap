@@ -13766,21 +13766,21 @@ textarea.form-control-lg {
 :root {
   --primary-font-family: "Open Sans", sans-serif;
   --brand-font-family: "Fraunces", serif;
-  --primary-color: #f8f7ff;
-  --brand-color: #9381ff;
-  --primary-txt-color: #1a0b36;
-  --link-color: #9381ff;
-  --sl-color-primary-50: white;
-  --sl-color-primary-100: white;
-  --sl-color-primary-200: #eae7ff;
-  --sl-color-primary-300: #bfb4ff;
-  --sl-color-primary-400: #9381ff;
-  --sl-color-primary-500: #674eff;
-  --sl-color-primary-600: #3c1bff;
-  --sl-color-primary-700: #2100e7;
-  --sl-color-primary-800: #1a00b4;
-  --sl-color-primary-900: #120081;
-  --sl-focus-ring-color-primary: #9381ff1a;
+  --primary-color: #f2f4f3;
+  --brand-color: #15616d;
+  --primary-txt-color: var(--sl-color-primary-900);
+  --link-color: #15616d;
+  --sl-color-primary-50: #6bd2e3;
+  --sl-color-primary-100: #41c5da;
+  --sl-color-primary-200: #25adc3;
+  --sl-color-primary-300: #1d8798;
+  --sl-color-primary-400: #15616d;
+  --sl-color-primary-500: #0d3b42;
+  --sl-color-primary-600: #051517;
+  --sl-color-primary-700: black;
+  --sl-color-primary-800: black;
+  --sl-color-primary-900: black;
+  --sl-focus-ring-color-primary: #15616d1a;
 }
 
 *, :before, :after {
@@ -13803,12 +13803,70 @@ main section {
   min-height: 100vh;
 }
 
+h2 {
+  font-family: var(--brand-font-family);
+  font-size: 20px;
+}
+
+header {
+  padding: 20px;
+}
+
+header div {
+  margin: 0;
+  padding: 0;
+}
+
+header div a {
+  text-decoration: none;
+}
+
+header div a div {
+  font-family: var(--brand-font-family);
+  color: var(--brand-color);
+  padding: 0;
+  font-size: 20px;
+}
+
+header nav ul a {
+  color: var(--sl-color-primary-200);
+  text-decoration: none;
+  transition: all .5s;
+}
+
+header nav ul a:hover, header nav ul a:active, header nav ul a:focus {
+  color: var(--primary-color);
+}
+
 sl-icon-button {
+  color: var(--brand-color);
   font-size: 1.5em;
 }
 
 sl-icon-button::part(base) {
-  padding-right: 0;
+  padding: 0;
+}
+
+sl-drawer {
+  --header-spacing: 20px;
+  --size: auto;
+  color: var(--primary-color);
+}
+
+sl-drawer::part(title) {
+  font-family: var(--brand-font-family);
+}
+
+sl-drawer::part(close-button__base) {
+  color: var(--sl-color-primary-100);
+}
+
+sl-drawer::part(close-button__base):hover, sl-drawer::part(close-button__base):active, sl-drawer::part(close-button__base):focus {
+  color: var(--primary-color);
+}
+
+sl-drawer::part(panel) {
+  background-color: var(--brand-color);
 }
 
 /*# sourceMappingURL=index.3331fb96.css.map */

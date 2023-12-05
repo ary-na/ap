@@ -4,10 +4,10 @@
   --brand-font-family: 'Fraunces', serif;
 
   // Colours
-  --primary-color: #f8f7ff;
-  $brand-color: #9381ff;
+  --primary-color: #f2f4f3;
+  $brand-color: #15616d;
   --brand-color: #{$brand-color};
-  --primary-txt-color: #1a0b36;
+  --primary-txt-color: var(--sl-color-primary-900);
   --link-color: #{$brand-color};
 
   // Shoelace color tokens

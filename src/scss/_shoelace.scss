@@ -1,7 +1,32 @@
 sl-icon-button {
   font-size: 1.5em;
+  color: var(--brand-color);
 
   &::part(base) {
-    padding-right: 0;
+    padding: 0;
+  }
+}
+
+sl-drawer {
+  --header-spacing: 20px;
+  --size: auto;
+  color: var(--primary-color);
+
+  &::part(title) {
+    font-family: var(--brand-font-family);
+  }
+
+  &::part(close-button__base) {
+    color: var(--sl-color-primary-100);
+  }
+
+  &::part(close-button__base):hover,
+  &::part(close-button__base):active,
+  &::part(close-button__base):focus {
+    color: var(--primary-color);
+  }
+
+  &::part(panel) {
+    background-color: var(--brand-color);
   }
 }

@@ -7,29 +7,32 @@
     <meta name="author" content="Arian Najafi Yamchelo">
     <meta name="description" content="This website is a portfolio showcasing my work.">
     <meta name="keywords" content="Arian Najafi Yamchelo, Web Developer, Web Designer">
+    <meta name="theme-color" content="#15616d">
     <link rel="icon" href="images/logos/logo.ico" type="image/x-icon">
+    <script type="module" src="index.js" defer></script>
 </head>
 
 <body>
 
-<header class="container-xxl">
+<header class="container-fluid">
     <div class="d-flex justify-content-between align-items-center">
-        <div class="display-4">A</div>
+        <a href="/"><h2 class="mb-0">A</h2></a>
         <sl-icon-button name="list" label="Menu"></sl-icon-button>
     </div>
     <nav>
         <sl-drawer label="Arian N. Yamchelo" placement="top">
-            <ul class="list-unstyled">
+            <ul class="d-flex justify-content-center gap-2 gap-md-4 flex-column flex-md-row list-unstyled mb-0 fs-1">
                 <li><a href="/">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <p slot="footer" class="mb-0 small">&copy; 2023 AP</p>
         </sl-drawer>
     </nav>
 </header>
 
-<main class="container-xxl">
+<main class="container-fluid mb-0 pb-0">
     <section>
         <h1>Welcome...</h1>
         <p>Arian N. Yamchelo</p>
@@ -55,21 +58,14 @@
 
     <section id="contact">
         <h2>Contact Section</h2>
-        <p>This is contact section.</p>
+        <p class="mb-0">This is contact section.</p>
     </section>
 
 </main>
 
-<aside>
-    <h2>Aside Section</h2>
-    <p>This is additional content, related to the main content but not part of it.</p>
-</aside>
-
-<footer class="container-xxl">
+<footer class="container-fluid">
     <p class="mb-0">&copy; 2023 AP</p>
 </footer>
-
-<script type="module" src="index.js"></script>
 
 </body>
 </html>
