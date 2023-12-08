@@ -1,32 +1,7 @@
-sl-icon-button {
-  font-size: 1.5em;
-  color: var(--brand-color);
-
-  &::part(base) {
-    padding: 0;
-  }
+sl-button {
+    color: red;
 }
 
-sl-drawer {
-  --header-spacing: 20px;
-  --size: auto;
-  color: var(--primary-color);
-
-  &::part(title) {
-    font-family: var(--brand-font-family);
-  }
-
-  &::part(close-button__base) {
-    color: var(--sl-color-primary-100);
-  }
-
-  &::part(close-button__base):hover,
-  &::part(close-button__base):active,
-  &::part(close-button__base):focus {
-    color: var(--primary-color);
-  }
-
-  &::part(panel) {
-    background-color: var(--brand-color);
-  }
+sl-input, sl-textarea {
+  --sl-input-focus-ring-color: var(--tertiary-color);
 }

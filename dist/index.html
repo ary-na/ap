@@ -14,58 +14,90 @@
 
 <body>
 
-<header class="container-fluid">
-    <div class="d-flex justify-content-between align-items-center">
-        <a href="/"><h2 class="mb-0">A</h2></a>
-        <sl-icon-button name="list" label="Menu"></sl-icon-button>
-    </div>
-    <nav>
-        <sl-drawer label="Arian N. Yamchelo" placement="top">
-            <ul class="d-flex justify-content-center gap-2 gap-md-4 flex-column flex-md-row list-unstyled mb-0 fs-1">
-                <li><a href="/">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <p slot="footer" class="mb-0 small">&copy; 2023 AP</p>
-        </sl-drawer>
+<header>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">Arian N. Yamchelo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="ms-auto navbar-nav">
+                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#work">Work</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
     </nav>
 </header>
 
-<main class="container-fluid mb-0 pb-0">
-    <section>
+<main class="container my-5">
+    <section class="py-5">
         <h1>Welcome...</h1>
         <p>Arian N. Yamchelo</p>
     </section>
 
-    <article id="about">
-        <header>
-            <h2>Article Title</h2>
-            <p>Published on<time datetime="2023-01-01"> January 1, 2023</time></p>
-        </header>
-        <section>
-            <p>This is the content of the article.</p>
-        </section>
-        <footer>
-            <p>Author: John Doe</p>
-        </footer>
+    <article id="about" class="py-5">
+        <div class="glass-container p-5 m-5 w-75 mx-auto">
+            <header>
+                <h2 class="mb-4">About me</h2>
+            </header>
+            <section class="typewriter-text fst-italic small lh-lg" id="typewriter-section">
+                <p>As an IT graduate with a zeal for programming and web development, I am currently expanding my
+                    horizons by pursuing a Master of Computer Science, specialising in artificial intelligence. My
+                    journey involves delving into the intricacies of creating captivating designs and honing my skills
+                    in JavaScript. Navigating the dynamic landscape of web technologies, I combine technical prowess
+                    with a keen understanding of their evolution. Beyond the digital realm, my affection extends to
+                    animals, revealing a well-rounded personality that values life's virtual and tangible aspects. This
+                    dedication to the IT field is further underscored by my creative spirit and compassionate heart,
+                    culminating in a unique blend of skills and interests. My commitment to continuous learning and
+                    specialisation in AI positions me as a standout professional in this ever-evolving field.</p>
+            </section>
+        </div>
     </article>
 
-    <section id="work">
+    <section id="work" class="py-5">
         <h2>Work Section</h2>
         <p>This is work section.</p>
     </section>
 
-    <section id="contact">
-        <h2>Contact Section</h2>
-        <p class="mb-0">This is contact section.</p>
+    <section id="contact" class="px-md-5 py-5">
+        <h2>Contact me</h2>
+        <p>For all inquries fill in you details, and I'll be in touch with you.</p>
+        <form class="row g-2 gx-4">
+            <div class="col-md-6">
+                <sl-input name="name" id="name" label="Name" placeholder="Enter your name..."></sl-input>
+                <span class="error-message small text-danger" id="nameError">Name error placeholder.</span>
+            </div>
+            <div class="col-md-6">
+                <sl-input name="email" id="email" label="Email" placeholder="Enter your email..."></sl-input>
+                <span class="error-message small text-danger" id="emailError">Email error placeholder.</span>
+            </div>
+            <div class="col-12">
+                <sl-textarea name="message" id="message" class="col-12" label="Message" placeholder="Enter your message..."></sl-textarea>
+                <span class="error-message small text-danger" id="messageError">Message error placeholder.</span>
+            </div>
+            <sl-button class="col-md-2 ms-auto" type="submit" variant="primary">Send</sl-button>
+        </form>
+
     </section>
 
 </main>
 
-<footer class="container-fluid">
-    <p class="mb-0">&copy; 2023 AP</p>
+<footer class="container my-5">
+    <div class="d-flex gap-4 flex-column flex-md-row justify-content-between align-items-center py-5">
+        <a class="text-decoration-none" href="#"><h2 class="mb-0">Arian N. Yamchelo</h2></a>
+        <div class="d-flex flex-column gap-2">
+            <div class="text-center text-md-end">
+                <sl-icon-button name="github" label="GitHub" href="https://github.com/ary-na" target="_blank"></sl-icon-button>
+                <sl-icon-button name="linkedin" label="LinkedIn" href="https://www.linkedin.com/in/arian-najafi-yamchelo" target="_blank"></sl-icon-button>
+                <sl-icon-button name="twitter-x" label="X" href="https://twitter.com/ArianNYamchelo" target="_blank"></sl-icon-button>
+            </div>
+            <p class="mb-0 text-muted">&copy; 2023 Arian N. Yamchelo</p>
+        </div>
+    </div>
 </footer>
-
 </body>
 </html>

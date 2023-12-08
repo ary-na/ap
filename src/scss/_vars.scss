@@ -1,25 +1,45 @@
 :root {
   // Fonts
   --primary-font-family: 'Open Sans', sans-serif;
-  --brand-font-family: 'Fraunces', serif;
+  --secondary-font-family: 'Fraunces', serif;
 
   // Colours
-  --primary-color: #f2f4f3;
-  $brand-color: #15616d;
-  --brand-color: #{$brand-color};
-  --primary-txt-color: var(--sl-color-primary-900);
-  --link-color: #{$brand-color};
+  $primary-color: #15616d;
+  --primary-color: #{$primary-color};
+  --secondary-color: #f2f4f3;
+  --tertiary-color: #ffecd1;
+
+  --primary-txt-color: #001524;
+  --link-color: #{$primary-color};
 
   // Shoelace color tokens
-  --sl-color-primary-50: #{lighten($brand-color, 40%)};
-  --sl-color-primary-100: #{lighten($brand-color, 30%)};
-  --sl-color-primary-200: #{lighten($brand-color, 20%)};
-  --sl-color-primary-300: #{lighten($brand-color, 10%)};
-  --sl-color-primary-400: #{$brand-color};
-  --sl-color-primary-500: #{darken($brand-color, 10%)};
-  --sl-color-primary-600: #{darken($brand-color, 20%)};
-  --sl-color-primary-700: #{darken($brand-color, 30%)};
-  --sl-color-primary-800: #{darken($brand-color, 40%)};
-  --sl-color-primary-900: #{darken($brand-color, 50%)};
-  --sl-focus-ring-color-primary: #{rgba($brand-color, 0.1)};
+  --sl-color-primary-50: #{lighten($primary-color, 25%)};
+  --sl-color-primary-100: #{lighten($primary-color, 20%)};
+  --sl-color-primary-200: #{lighten($primary-color, 15%)};
+  --sl-color-primary-300: #{lighten($primary-color, 10%)};
+  --sl-color-primary-400: #{lighten($primary-color, 5%)};
+  --sl-color-primary-500: #{$primary-color};
+  --sl-color-primary-600: #{darken($primary-color, 5%)};
+  --sl-color-primary-700: #{darken($primary-color, 10%)};
+  --sl-color-primary-800: #{darken($primary-color, 15%)};
+  --sl-color-primary-900: #{darken($primary-color, 20%)};
+  --sl-focus-ring-color-primary: #{rgba($primary-color, 0.1)};
 }
+
+$primary: #15616d;
+$secondary: #f2f4f3;
+$light: #ffecd1;
+
+$theme-colors: (
+        "primary": $primary,
+        "secondary":  $secondary,
+        "light": $light,
+);
+
+// Navbar
+$navbar-light-brand-color: $secondary;
+$navbar-light-brand-hover-color: $light;
+$navbar-light-icon-color: $secondary;
+$navbar-light-toggler-border-color: $secondary;
+$navbar-light-color: $secondary;
+$navbar-light-hover-color: $light;

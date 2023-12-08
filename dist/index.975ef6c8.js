@@ -586,14 +586,15 @@ var _bootstrapMinCss = require("bootstrap/dist/css/bootstrap.min.css");
 // Import Bootstrap JS.
 var _bootstrapBundleMinJs = require("bootstrap/dist/js/bootstrap.bundle.min.js");
 // Import project's JS files.
-var _loadBaseUrl = require("./js/utilities/loadBaseUrl");
-var _navDrawer = require("./js/utilities/navDrawer");
+var _aboutMeJs = require("./js/animations/aboutMe.js");
+var _loadBaseUrlJs = require("./js/utilities/loadBaseUrl.js");
+var _formValidatorJs = require("./js/validators/formValidator.js");
 // Import styles.
 var _mainScss = require("./scss/main.scss");
 // Set the base path to the folder with copied Shoelace's assets.
 (0, _basePath.setBasePath)("/shoelace");
 
-},{"@shoelace-style/shoelace/dist/utilities/base-path":"67MCn","@shoelace-style/shoelace/dist/themes/light.css":"jjR64","@shoelace-style/shoelace/dist/shoelace.js":"6TTGm","bootstrap/dist/css/bootstrap.min.css":"i5LP7","bootstrap/dist/js/bootstrap.bundle.min.js":"gCRej","./scss/main.scss":"4Pg3x","./js/utilities/loadBaseUrl":"hr1d0","./js/utilities/navDrawer":"k110A"}],"67MCn":[function(require,module,exports) {
+},{"@shoelace-style/shoelace/dist/utilities/base-path":"67MCn","@shoelace-style/shoelace/dist/themes/light.css":"jjR64","@shoelace-style/shoelace/dist/shoelace.js":"6TTGm","bootstrap/dist/css/bootstrap.min.css":"i5LP7","bootstrap/dist/js/bootstrap.bundle.min.js":"gCRej","./scss/main.scss":"4Pg3x","./js/animations/aboutMe.js":"1peWl","./js/utilities/loadBaseUrl.js":"hr1d0","./js/validators/formValidator.js":"irBJP"}],"67MCn":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getBasePath", ()=>(0, _chunk3Y6SB6QSJs.getBasePath));
@@ -31712,7 +31713,9 @@ var animated_image_styles_default = (0, _lit.css)`
     };
 });
 
-},{}],"4Pg3x":[function() {},{}],"hr1d0":[function(require,module,exports) {
+},{}],"4Pg3x":[function() {},{}],"1peWl":[function(require,module,exports) {
+
+},{}],"hr1d0":[function(require,module,exports) {
 document.addEventListener("DOMContentLoaded", ()=>{
     const urlString = window.location.href;
     // Creating a URL object
@@ -31723,25 +31726,101 @@ document.addEventListener("DOMContentLoaded", ()=>{
     window.history.replaceState({}, document.title, baseUrl);
 });
 
-},{}],"k110A":[function(require,module,exports) {
-const slIconButton = document.querySelector("header > div > sl-icon-button");
-const slDrawer = document.querySelector("nav > sl-drawer");
-const drawerItems = document.querySelectorAll("sl-drawer > ul > li a");
-// Show drawer on drawer icon click.
-slIconButton.addEventListener("click", async ()=>{
-    await slDrawer.show();
+},{}],"irBJP":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _emailValidator = require("email-validator");
+var _emailValidatorDefault = parcelHelpers.interopDefault(_emailValidator);
+document.querySelector("form").addEventListener("submit", async (e)=>{
+    e.preventDefault();
+    let isFormValid = await validateForm();
+    if (isFormValid) console.log("submitted");
 });
-// Hide drawer on drawer item click.
-drawerItems.forEach((item)=>item.addEventListener("click", async (e)=>{
-        e.preventDefault();
-        await slDrawer.hide();
-        const itemAttr = item.getAttribute("href");
-        if (itemAttr === "#about" || itemAttr === "#work" || itemAttr === "#contact") document.querySelector(itemAttr).scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
-        else window.location.reload();
-    }));
+let resetForm = (el, defaultMessage)=>{
+    return new Promise((resolve)=>{
+        el.classList.remove("show");
+        setTimeout(()=>{
+            el.textContent = defaultMessage;
+            resolve();
+        }, 200);
+    });
+};
+let validateForm = async ()=>{
+    const nameErrorEl = document.querySelector("#nameError");
+    const emailErrorEl = document.querySelector("#emailError");
+    const messageErrorEl = document.querySelector("#messageError");
+    const nameInputEl = document.querySelector("#name");
+    const emailInputEl = document.querySelector("#email");
+    const messageTextAreaEl = document.querySelector("#message");
+    const excludedNames = [
+        "Test",
+        "test",
+        "Admin",
+        "admin",
+        "User",
+        "user"
+    ];
+    const nameRegexPattern = `^(?!${excludedNames.join("|")}$)[A-Za-z\\s'-]+$`;
+    const nameRegex = new RegExp(nameRegexPattern);
+    const messageRegexPattern = /^[a-zA-Z0-9,.!?()\s]+$/;
+    const messageRegex = new RegExp(messageRegexPattern);
+    let isValid = true;
+    // Reset form
+    await Promise.all([
+        resetForm(nameErrorEl, "Name error placeholder."),
+        resetForm(emailErrorEl, "email error placeholder."),
+        resetForm(messageErrorEl, "Message error placeholder.")
+    ]);
+    if (nameInputEl.value === "") {
+        nameErrorEl.textContent = "You must enter your name.";
+        nameErrorEl.classList.add("show");
+        isValid = false;
+    } else if (!nameRegex.test(nameInputEl.value)) {
+        nameErrorEl.textContent = "You must enter a valid name.";
+        nameErrorEl.classList.add("show");
+        isValid = false;
+    }
+    if (emailInputEl.value === "") {
+        emailErrorEl.textContent = "You must enter your email.";
+        emailErrorEl.classList.add("show");
+        isValid = false;
+    } else if (!(0, _emailValidatorDefault.default).validate(emailInputEl.value)) {
+        emailErrorEl.textContent = "You must enter a valid email address.";
+        emailErrorEl.classList.add("show");
+        isValid = false;
+    }
+    if (messageTextAreaEl.value === "") {
+        messageErrorEl.textContent = "You must enter a message.";
+        messageErrorEl.classList.add("show");
+        isValid = false;
+    } else if (!messageRegex.test(messageTextAreaEl.value)) {
+        messageErrorEl.textContent = "You must enter a valid message.";
+        messageErrorEl.classList.add("show");
+        isValid = false;
+    }
+    return isValid;
+};
+
+},{"email-validator":"gi6bx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gi6bx":[function(require,module,exports) {
+"use strict";
+var tester = /^[-!#$%&'*+\/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-*\.?[a-zA-Z0-9])*\.[a-zA-Z](-?[a-zA-Z0-9])+$/;
+// Thanks to:
+// http://fightingforalostcause.net/misc/2006/compare-email-regex.php
+// http://thedailywtf.com/Articles/Validating_Email_Addresses.aspx
+// http://stackoverflow.com/questions/201323/what-is-the-best-regular-expression-for-validating-email-addresses/201378#201378
+exports.validate = function(email) {
+    if (!email) return false;
+    if (email.length > 254) return false;
+    var valid = tester.test(email);
+    if (!valid) return false;
+    // Further checking of some things regex can't handle
+    var parts = email.split("@");
+    if (parts[0].length > 64) return false;
+    var domainParts = parts[1].split(".");
+    if (domainParts.some(function(part) {
+        return part.length > 63;
+    })) return false;
+    return true;
+};
 
 },{}]},["icZzK","8lqZg"], "8lqZg", "parcelRequire1323")
 

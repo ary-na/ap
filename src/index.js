@@ -17,8 +17,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 // Import project's JS files.
-import './js/utilities/loadBaseUrl'
-import './js/utilities/navDrawer'
+import './js/animations/aboutMe.js'
+import './js/utilities/loadBaseUrl.js'
+import './js/validators/formValidator.js'
 
 // Import styles.
 import './scss/main.scss'
