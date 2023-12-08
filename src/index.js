@@ -18,8 +18,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 // Import project's JS files.
 import './js/animations/aboutMe.js'
+import './js/forms/contactHandler.js'
 import './js/utilities/loadBaseUrl.js'
-import './js/validators/formValidator.js'
+import './js/validators/contactFormValidator.js'
 
 // Import styles.
 import './scss/main.scss'

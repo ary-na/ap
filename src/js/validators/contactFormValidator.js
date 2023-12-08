@@ -1,12 +1,5 @@
 import emailValidator from 'email-validator'
 
-document.querySelector('form').addEventListener('submit', async e => {
-    e.preventDefault()
-    let isFormValid = await validateForm()
-    if (isFormValid)
-        console.log("submitted")
-})
-
 let resetForm = (el, defaultMessage) => {
     return new Promise(resolve => {
         el.classList.remove('show')
@@ -74,3 +67,5 @@ let validateForm = async () => {
     }
     return isValid;
 }
+
+export {validateForm}
