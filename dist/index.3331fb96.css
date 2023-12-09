@@ -13822,13 +13822,11 @@ nav div a, h2, .h2 {
 
 .error-message {
   opacity: 0;
-  transition: opacity .3s ease-in-out, transform .3s ease-in-out;
-  transform: translateX(-80px);
+  transition: opacity .2s ease-in-out;
 }
 
 .error-message.show {
   opacity: 1;
-  transform: translateY(0);
 }
 
 sl-input, sl-textarea {
