@@ -35,15 +35,16 @@
 </header>
 
 <main class="container my-5">
+
     <section class="py-5">
-        <h1>Welcome...</h1>
+        <h1 class="display-1 fs-1">Welcome</h1>
         <p>Arian N. Yamchelo</p>
     </section>
 
     <article id="about" class="py-5">
-        <div class="glass-container p-5 m-5 w-75 mx-auto">
+        <div class="glass-container">
             <header>
-                <h2 class="mb-4">About me</h2>
+                <h2 class="mb-4 display-5">About</h2>
             </header>
             <section class="typewriter-text fst-italic small lh-lg" id="typewriter-section">
                 <p>As an IT graduate with a zeal for programming and web development, I am currently expanding my
@@ -60,14 +61,15 @@
     </article>
 
     <section id="work" class="py-5">
-        <h2>Work Section</h2>
+        <h2 class="mb-4 display-5">Work</h2>
         <p>This is work section.</p>
     </section>
 
-    <section id="contact" class="px-md-5 py-5">
-        <h2>Contact me</h2>
-        <p>For all inquries fill in you details, and I'll be in touch with you.</p>
+    <section id="contact" class="py-5">
+        <h2 class="mb-2 display-5">Contact</h2>
+        <p class="mb-5 text-muted small">Please provide your details for any inquiries you may have, and I will get in touch with you.</p>
         <form class="row g-2 gx-4">
+
             <div class="col-md-6">
                 <sl-input name="name" id="name" label="Name" placeholder="Enter your name..."></sl-input>
                 <span class="error-message small text-danger" id="nameError">Name error placeholder.</span>
@@ -80,27 +82,23 @@
                 <sl-textarea name="message" id="message" class="col-12" label="Message" placeholder="Enter your message..."></sl-textarea>
                 <span class="error-message small text-danger" id="messageError">Message error placeholder.</span>
             </div>
-            <sl-button class="col-md-2 ms-auto" type="submit" variant="primary">Send</sl-button>
-        </form>
+            <sl-button class="col-md-2 ms-auto submit-btn" type="submit" variant="primary">Send</sl-button>
 
+        </form>
     </section>
 
 </main>
 
-<footer class="container my-5">
-    <div class="d-flex gap-4 flex-column flex-md-row justify-content-between align-items-center py-5">
-        <a class="text-decoration-none" href="#"><h2 class="mb-0">Arian N. Yamchelo</h2></a>
+<footer class="container mb-5">
+    <div class="d-flex gap-4 flex-column flex-md-row justify-content-between align-items-center pb-5">
+        <a class="text-decoration-none align-self-md-end" href="#"><h2 class="mb-0">Arian N. Yamchelo</h2></a>
         <div class="d-flex flex-column gap-2">
             <div class="text-center text-md-end">
-                <sl-icon-button name="github" label="GitHub" href="https://github.com/ary-na"
-                                target="_blank"></sl-icon-button>
-                <sl-icon-button name="linkedin" label="LinkedIn"
-                                href="https://www.linkedin.com/in/arian-najafi-yamchelo"
-                                target="_blank"></sl-icon-button>
-                <sl-icon-button name="twitter-x" label="X" href="https://twitter.com/ArianNYamchelo"
-                                target="_blank"></sl-icon-button>
+                <sl-icon-button name="github" label="GitHub" href="https://github.com/ary-na" target="_blank"></sl-icon-button>
+                <sl-icon-button name="linkedin" label="LinkedIn" href="https://www.linkedin.com/in/arian-najafi-yamchelo" target="_blank"></sl-icon-button>
+                <sl-icon-button name="twitter-x" label="X" href="https://twitter.com/ArianNYamchelo" target="_blank"></sl-icon-button>
             </div>
-            <p class="mb-0 text-muted">&copy; 2023 Arian N. Yamchelo</p>
+            <p class="mb-0 text-muted">&copy; <span id="year"></span> Arian N. Yamchelo</p>
         </div>
     </div>
 </footer>
