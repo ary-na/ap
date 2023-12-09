@@ -1,3 +1,5 @@
+// General styles -----------------------------------------------------------------------
+
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
@@ -26,8 +28,10 @@ h2 {
   font-family: var(--secondary-font-family);
 }
 
+// Utility classes ----------------------------------------------------------------------
+
 .glass-container {
-  background: rgba(242, 244, 243, 0.4); /* Adjust the alpha value for transparency */
+  background: rgba(242, 244, 243, 0.4);
   border-radius: 10px;
   padding: 20px;
   margin: 0;
@@ -37,21 +41,15 @@ h2 {
   transition: background 0.3s ease-in-out;
 
   &:hover {
-    background: rgba(242, 244, 243, 0.8); /* Adjust the hover effect transparency */
+    background: rgba(242, 244, 243, 0.8);
   }
 }
 
 .error-message {
   opacity: 0;
-  transform: translateX(-80px); /* Adjust the initial offset */
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 
   &.show {
     opacity: 1;
-    transform: translateY(0);
   }
-}
-
-@media screen and (min-width: 768px) {
-
 }
