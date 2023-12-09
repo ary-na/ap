@@ -8,28 +8,26 @@ html {
   background-color: var(--primary-color);
 }
 
-h2 {
-  font-family: var(--secondary-font-family);
-}
-
 body {
   background-color: var(--secondary-color);
   color: var(--primary-txt-color);
   font-family: var(--primary-font-family);
 }
 
-header {
-  nav {
-    div {
-      a {
-        font-family: var(--secondary-font-family);
-      }
+nav {
+  div {
+    a {
+      font-family: var(--secondary-font-family);
     }
   }
 }
 
+h2 {
+  font-family: var(--secondary-font-family);
+}
+
 .glass-container {
-  background: rgba(242, 244, 243, 0.7); /* Adjust the alpha value for transparency */
+  background: rgba(242, 244, 243, 0.4); /* Adjust the alpha value for transparency */
   border-radius: 10px;
   padding: 20px;
   margin: 0;
@@ -39,25 +37,19 @@ header {
   transition: background 0.3s ease-in-out;
 
   &:hover {
-    background: rgba(242, 244, 243, 0.9); /* Adjust the hover effect transparency */
+    background: rgba(242, 244, 243, 0.8); /* Adjust the hover effect transparency */
   }
-}
-
-.typewriter-text {
-  font-size: 16px;
-  overflow: hidden;
-  display: inline-block;
 }
 
 .error-message {
   opacity: 0;
-  transform: translateY(-20px); /* Adjust the initial offset */
+  transform: translateX(-80px); /* Adjust the initial offset */
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
 
-.error-message.show {
-  opacity: 1;
-  transform: translateY(0);
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media screen and (min-width: 768px) {

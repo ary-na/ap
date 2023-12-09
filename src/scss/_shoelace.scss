@@ -1,7 +1,3 @@
-sl-button {
-    color: red;
-}
-
 sl-input, sl-textarea {
-  --sl-input-focus-ring-color: var(--tertiary-color);
+  --sl-input-focus-ring-color: var(--sl-focus-ring-color-primary);
 }

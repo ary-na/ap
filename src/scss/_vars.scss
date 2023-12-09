@@ -7,7 +7,7 @@
   $primary-color: #15616d;
   --primary-color: #{$primary-color};
   --secondary-color: #f2f4f3;
-  --tertiary-color: #ffecd1;
+  --tertiary-color: #ffc752;
 
   --primary-txt-color: #001524;
   --link-color: #{$primary-color};
@@ -23,12 +23,12 @@
   --sl-color-primary-700: #{darken($primary-color, 10%)};
   --sl-color-primary-800: #{darken($primary-color, 15%)};
   --sl-color-primary-900: #{darken($primary-color, 20%)};
-  --sl-focus-ring-color-primary: #{rgba($primary-color, 0.1)};
+  --sl-focus-ring-color-primary: #{rgba($primary-color, 0.3)};
 }
 
 $primary: #15616d;
 $secondary: #f2f4f3;
-$light: #ffecd1;
+$light: #ffc752;
 
 $theme-colors: (
         "primary": $primary,
