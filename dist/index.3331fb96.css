@@ -13781,7 +13781,7 @@ textarea.form-control-lg {
   --sl-color-primary-700: #0d3b42;
   --sl-color-primary-800: #09282d;
   --sl-color-primary-900: #051517;
-  --sl-focus-ring-color-primary: #15616d4d;
+  --sl-input-focus-ring-color: #15616d4d;
 }
 
 *, :before, :after {
@@ -13827,10 +13827,6 @@ nav div a, h2, .h2 {
 
 .error-message.show {
   opacity: 1;
-}
-
-sl-input, sl-textarea {
-  --sl-input-focus-ring-color: var(--sl-focus-ring-color-primary);
 }
 
 :root, [data-bs-theme="light"] {
