@@ -38027,7 +38027,7 @@ var _dotenvDefault = parcelHelpers.interopDefault(_dotenv);
 class Contact {
     async postContact(formData) {
         // send fetch request
-        const response = await fetch(`${"http://localhost:3000"}/contact`, {
+        const response = await fetch(`${"https://4lwju6prw2.execute-api.ap-southeast-2.amazonaws.com"}/contact`, {
             method: "POST",
             body: JSON.stringify(Object.fromEntries(formData)),
             headers: {
@@ -74568,7 +74568,7 @@ let validateForm = async ()=>{
     ];
     const nameRegexPattern = `^(?!${excludedNames.join("|")}$)[A-Za-z\\s'-]+$`;
     const nameRegex = new RegExp(nameRegexPattern);
-    const messageRegexPattern = /^[a-zA-Z0-9,.!?()\s]+$/;
+    const messageRegexPattern = /^[a-zA-Z0-9,.!?():'\s"-]+$/;
     const messageRegex = new RegExp(messageRegexPattern);
     let isValid = true;
     // Reset form
