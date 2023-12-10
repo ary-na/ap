@@ -24,7 +24,7 @@ let validateForm = async () => {
     const nameRegexPattern = `^(?!${excludedNames.join('|')}$)[A-Za-z\\s'-]+$`
     const nameRegex = new RegExp(nameRegexPattern)
 
-    const messageRegexPattern = /^[a-zA-Z0-9,.!?()\s]+$/
+    const messageRegexPattern = /^[a-zA-Z0-9,.!?():'\s"-]+$/
     const messageRegex = new RegExp(messageRegexPattern)
 
     let isValid = true
