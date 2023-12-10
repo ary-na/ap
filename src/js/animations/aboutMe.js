@@ -1,6 +1,6 @@
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-
+// import gsap from 'gsap';
+// import ScrollTrigger from 'gsap/ScrollTrigger';
+//
 // gsap.registerPlugin(ScrollTrigger);
 //
 // gsap.to(".glass-container", {
@@ -9,6 +9,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 //         start: 'center center',
 //         end: 'bottom center',
 //         scrub: 1,
+//         markers: 'true'
 //     },
 //     y: 200,
 //     ease: "ease",
