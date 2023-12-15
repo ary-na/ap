@@ -17,15 +17,30 @@ body {
 }
 
 nav {
+  img {
+    width: 30px;
+    height: auto;
+  }
+}
+
+section {
   div {
-    a {
-      font-family: var(--secondary-font-family);
+    svg {
+      max-width: 250px;
+      max-height: 250px;
     }
   }
 }
 
 h2 {
   font-family: var(--secondary-font-family);
+}
+
+footer {
+  img {
+    width: 80px;
+    height: auto;
+  }
 }
 
 // Utility classes ----------------------------------------------------------------------
@@ -53,3 +68,15 @@ h2 {
     opacity: 1;
   }
 }
+
+.logo {
+  fill: var(--sl-color-neutral-300);
+  transition: fill 0.2s ease-in-out;
+}
+
+.project:hover {
+  .logo {
+    fill: var(--primary-color);
+  }
+}
+

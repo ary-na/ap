@@ -10,7 +10,6 @@
   $primary-color: #15616d;
   --primary-color: #{$primary-color};
   --secondary-color: #f2f4f3;
-  --tertiary-color: #ffc752;
 
   --primary-txt-color: #001524;
   --link-color: #{$primary-color};
@@ -34,19 +33,14 @@
 
 $primary: #15616d;
 $secondary: #f2f4f3;
-$light: #ffc752;
 
 $theme-colors: (
         "primary": $primary,
         "secondary": $secondary,
-        "light": $light,
 );
 
 // Bootstrap Navbar
 
-$navbar-light-brand-color: $secondary;
-$navbar-light-brand-hover-color: $light;
-$navbar-light-icon-color: $secondary;
+$navbar-light-icon-color: $primary;
 $navbar-light-toggler-border-color: $secondary;
-$navbar-light-color: $secondary;
-$navbar-light-hover-color: $light;
+$navbar-light-color: $primary;
