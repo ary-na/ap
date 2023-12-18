@@ -13805,8 +13805,8 @@ nav img {
 }
 
 section a svg {
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 h2, .h2 {
