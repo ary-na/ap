@@ -21,7 +21,6 @@ document.querySelector('form').addEventListener('submit', async e => {
 
 let createDialog = async (label, content) => {
     const dialogEl = document.createElement('sl-dialog')
-    dialogEl.setAttribute('style', '--width: 50vw;')
     dialogEl.setAttribute('label', label)
 
     // Create dialog content
