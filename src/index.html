@@ -14,13 +14,10 @@
 
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="/"><img src="images/logos/logo-primary.svg"
-                                                  alt="This is an image of the website's logo."></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span
-                    class="navbar-toggler-icon"></span></button>
+            <a class="navbar-brand" href="/"><img src="images/logos/logo-secondary.svg" alt="This is an image of the website's logo."></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="ms-auto navbar-nav">
                     <a class="nav-link" href="/">Home</a>
@@ -34,12 +31,13 @@
 </header>
 
 <main>
-    <section class="py-5 my-5">
-        <h1 class="d-none">Web designer and developer</h1>
-        <span class="d-none">Arian N. Yamchelo</span>
+    <section class="container position-relative py-5 my-5">
+
+        <h1 class="display-1">Web designer and developer</h1>
+        <span class="text-muted">Arian N. Yamchelo</span>
     </section>
 
-    <article id="about" class="container">
+    <article id="about" class="container pb-5">
         <div class="glass-container p-md-5 p-4">
             <header><h2 class="mb-4 display-5">About</h2></header>
             <section class="mb-0 fst-italic small lh-lg">
@@ -115,10 +113,9 @@
         <p class="text-center fst-italic small text-muted mb-0">Clicking on the links will redirect you to the relevant GitHub repository.</p>
     </section>
 
-    <section id="contact" class="container">
+    <section id="contact" class="container pt-5">
         <h2 class="mb-4 display-5">Contact me</h2>
-        <p class="small mb-0">Please provide your details for any inquiries you may have, and I will get in touch with
-            you.</p>
+        <p class="small mb-0">Please provide your details for any inquiries you may have, and I will get in touch with you.</p>
         <form class="row g-2 gx-4 py-5 my-5">
             <div class="col-md-6">
                 <sl-input name="name" id="name" label="Name" placeholder="Enter your name..."></sl-input>
@@ -129,8 +126,7 @@
                 <span class="error-message small text-danger" id="emailError">Email error placeholder.</span>
             </div>
             <div class="col-12">
-                <sl-textarea name="message" id="message" class="col-12" label="Message"
-                             placeholder="Enter your message..."></sl-textarea>
+                <sl-textarea name="message" id="message" class="col-12" label="Message" placeholder="Enter your message..."></sl-textarea>
                 <span class="error-message small text-danger" id="messageError">Message error placeholder.</span>
             </div>
             <sl-button class="col-md-2 ms-auto submit-btn" type="submit" variant="primary">Send</sl-button>
@@ -143,16 +139,12 @@
     <a href="#"><img src="images/logos/logo-primary.svg" alt="This is an image of the website's logo."></a>
     <div class="d-flex align-self-md-end flex-column gap-2">
         <div class="text-center text-md-end">
-            <sl-icon-button name="github" label="GitHub" href="https://github.com/ary-na"
-                            target="_blank"></sl-icon-button>
-            <sl-icon-button name="linkedin" label="LinkedIn" href="https://www.linkedin.com/in/arian-najafi-yamchelo"
-                            target="_blank"></sl-icon-button>
-            <sl-icon-button name="pinterest" label="Pinterest" href="https://www.pinterest.com.au/Ari4n7"
-                            target="_blank"></sl-icon-button>
-            <sl-icon-button name="twitter-x" label="X" href="https://twitter.com/ArianNYamchelo"
-                            target="_blank"></sl-icon-button>
+            <sl-icon-button name="github" label="GitHub" href="https://github.com/ary-na" target="_blank"></sl-icon-button>
+            <sl-icon-button name="linkedin" label="LinkedIn" href="https://www.linkedin.com/in/arian-najafi-yamchelo" target="_blank"></sl-icon-button>
+            <sl-icon-button name="pinterest" label="Pinterest" href="https://www.pinterest.com.au/Ari4n7" target="_blank"></sl-icon-button>
+            <sl-icon-button name="twitter-x" label="X" href="https://twitter.com/ArianNYamchelo" target="_blank"></sl-icon-button>
         </div>
-        <p class="mb-0 text-muted">&copy; <span id="year"></span> Arian N. Yamchelo</p>
+        <p class="mb-0 text-muted small">&copy; <span id="year"></span> Arian N. Yamchelo</p>
     </div>
 </footer>
 
