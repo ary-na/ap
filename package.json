@@ -1,7 +1,7 @@
 {
   "name": "ap",
   "version": "0.1.0",
-  "description": "Explore my portfolio website, a curated showcase of my creative endeavours and professional work.",
+  "description": "This website is a portfolio showcasing my work.",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
