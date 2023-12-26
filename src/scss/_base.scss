@@ -48,8 +48,6 @@ footer {
 .glass-container {
   background: rgba(242, 244, 243, 0.4);
   border-radius: 10px;
-  padding: 20px;
-  margin: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -82,3 +80,26 @@ footer {
   }
 }
 
+// Utility Ids --------------------------------------------------------------------------
+
+#letterA, #emptyEllipses, #frontRectangle {
+  transition: fill 0.5s ease-in-out;
+  fill: var(--primary-color);
+}
+
+#middleRectangle {
+  transition: fill 0.5s ease-in-out;
+  fill: var(--accent-color-green-secondary);
+}
+
+#backRectangle {
+  transition: fill 0.5s ease-in-out;
+  fill: var(--accent-color-green-primary);
+}
+
+#heroSVG {
+  width: 75vh;
+  @media screen and (min-width: 768px) {
+    width: 50vh;
+  }
+}

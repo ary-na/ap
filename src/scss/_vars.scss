@@ -11,6 +11,9 @@
   --primary-color: #{$primary-color};
   --secondary-color: #f2f4f3;
 
+  --accent-color-green-primary: #197280;
+  --accent-color-green-secondary: #1D8596;
+
   --primary-txt-color: #001524;
   --link-color: #{$primary-color};
 
@@ -42,7 +45,7 @@ $theme-colors: (
 // Bootstrap Navbar
 
 $navbar-light-icon-color: $primary;
-$navbar-light-icon-color: $secondary;
-$navbar-light-toggler-border-color: $secondary;
-$navbar-light-color: $secondary;
+$navbar-light-icon-color: $primary;
+$navbar-light-toggler-border-color: $primary;
+$navbar-light-color: $primary;
 $navbar-light-hover-color: var(--primary-txt-color);
