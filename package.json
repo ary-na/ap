@@ -1,7 +1,7 @@
 {
   "name": "ap",
   "version": "0.1.0",
-  "description": "This website is a portfolio showcasing my work.",
+  "description": "Explore my portfolio website, a curated showcase of my creative endeavours and professional work.",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
@@ -13,8 +13,8 @@
   },
   "keywords": [
     "Arian N. Yamchelo",
-    "Web developer",
-    "Web designer"
+    "Developer",
+    "Designer"
   ],
   "author": "Arian Najafi Yamchelo",
   "license": "ISC",
