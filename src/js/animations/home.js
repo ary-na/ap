@@ -8,13 +8,13 @@ const secondaryColor = getComputedStyle(document.documentElement).getPropertyVal
 const accentColorPrimary = getComputedStyle(document.documentElement).getPropertyValue('--accent-color-green-primary')
 const accentColorSecondary = getComputedStyle(document.documentElement).getPropertyValue('--accent-color-green-secondary')
 
-const emptyEllipsesEl = document.querySelector('#emptyEllipses')
-const letterAEl = document.querySelector('#letterA')
 const frontRectangleEl = document.querySelector('#frontRectangle')
 const middleRectangleEl = document.querySelector('#middleRectangle')
 const backRectangleEl = document.querySelector('#backRectangle')
 const heroSVG = document.querySelector('#heroSVG')
 const logoSVG = document.querySelector('#logo')
+const emptyEllipsesEl = document.querySelector('#emptyEllipses')
+const letterAEl = document.querySelector('#letterA')
 
 console.log(emptyEllipsesEl)
 console.log(letterAEl)
