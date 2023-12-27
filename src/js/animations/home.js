@@ -13,11 +13,8 @@ const middleRectangleEl = document.querySelector('#middleRectangle')
 const backRectangleEl = document.querySelector('#backRectangle')
 const heroSVG = document.querySelector('#heroSVG')
 const logoSVG = document.querySelector('#logo')
-const emptyEllipsesEl = document.querySelector('#emptyEllipses')
+const emptyEllipsesEl = document.querySelector('.empty-ellipses')
 const letterAEl = document.querySelector('#letterA')
-
-console.log(emptyEllipsesEl)
-console.log(letterAEl)
 
 // Hero SVG Animation
 

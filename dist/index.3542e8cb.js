@@ -31733,13 +31733,13 @@ const primaryColor = getComputedStyle(document.documentElement).getPropertyValue
 const secondaryColor = getComputedStyle(document.documentElement).getPropertyValue("--secondary-color");
 const accentColorPrimary = getComputedStyle(document.documentElement).getPropertyValue("--accent-color-green-primary");
 const accentColorSecondary = getComputedStyle(document.documentElement).getPropertyValue("--accent-color-green-secondary");
-const emptyEllipsesEl = document.querySelector("#emptyEllipses");
-const letterAEl = document.querySelector("#letterA");
 const frontRectangleEl = document.querySelector("#frontRectangle");
 const middleRectangleEl = document.querySelector("#middleRectangle");
 const backRectangleEl = document.querySelector("#backRectangle");
 const heroSVG = document.querySelector("#heroSVG");
 const logoSVG = document.querySelector("#logo");
+const emptyEllipsesEl = document.querySelector(".empty-ellipses");
+const letterAEl = document.querySelector("#letterA");
 // Hero SVG Animation
 (0, _gsapDefault.default).to(heroSVG, {
     rotation: 360,
