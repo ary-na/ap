@@ -31740,6 +31740,8 @@ const middleRectangleEl = document.querySelector("#middleRectangle");
 const backRectangleEl = document.querySelector("#backRectangle");
 const heroSVG = document.querySelector("#heroSVG");
 const logoSVG = document.querySelector("#logo");
+console.log(emptyEllipsesEl);
+console.log(letterAEl);
 // Hero SVG Animation
 (0, _gsapDefault.default).to(heroSVG, {
     rotation: 360,
