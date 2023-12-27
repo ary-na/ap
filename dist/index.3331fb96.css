@@ -13852,7 +13852,7 @@ footer img {
   fill: var(--primary-color);
 }
 
-#letterA, #emptyEllipses, #frontRectangle {
+.letter-a, .empty-ellipses, #frontRectangle {
   fill: var(--primary-color);
   transition: fill .5s ease-in-out;
 }

@@ -43,7 +43,7 @@ footer {
   }
 }
 
-// Utility classes ----------------------------------------------------------------------
+// Utility classes and Ids ----------------------------------------------------------------------
 
 .glass-container {
   background: rgba(242, 244, 243, 0.4);
@@ -80,9 +80,7 @@ footer {
   }
 }
 
-// Utility Ids --------------------------------------------------------------------------
-
-#letterA, #emptyEllipses, #frontRectangle {
+.letter-a, .empty-ellipses, #frontRectangle {
   transition: fill 0.5s ease-in-out;
   fill: var(--primary-color);
 }

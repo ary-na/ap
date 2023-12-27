@@ -12,11 +12,10 @@ const frontRectangleEl = document.querySelector('#frontRectangle')
 const middleRectangleEl = document.querySelector('#middleRectangle')
 const backRectangleEl = document.querySelector('#backRectangle')
 const heroSVG = document.querySelector('#heroSVG')
-const logoSVG = document.querySelector('#logo')
+const logoSVG = document.querySelector('.logo')
 const emptyEllipsesEl = document.querySelector('.empty-ellipses')
-const letterAEl = document.querySelector('#letterA')
+const letterAEl = document.querySelector('.letter-a')
 
-console.log(emptyEllipsesEl)
 // Hero SVG Animation
 
 gsap.to(heroSVG, {
