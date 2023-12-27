@@ -9,9 +9,9 @@ const accentColorPrimary = getComputedStyle(document.documentElement).getPropert
 const accentColorSecondary = getComputedStyle(document.documentElement).getPropertyValue('--accent-color-green-secondary')
 
 const heroSVG = document.querySelector('#heroSVG')
-const frontRectangleEl = document.querySelector('#frontRectangle')
-const middleRectangleEl = document.querySelector('#middleRectangle')
-const backRectangleEl = document.querySelector('#backRectangle')
+const frontRectangleEl = document.querySelector('.front-rectangle')
+const middleRectangleEl = document.querySelector('.middle-rectangle')
+const backRectangleEl = document.querySelector('.back-rectangle')
 const logoSVG = document.querySelector('.hero-logo')
 const emptyEllipsesEl = document.querySelector('.empty-ellipses')
 const letterAEl = document.querySelector('.letter-a')

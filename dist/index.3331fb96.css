@@ -13852,17 +13852,17 @@ footer img {
   fill: var(--primary-color);
 }
 
-.letter-a, .empty-ellipses, #frontRectangle {
+.letter-a, .empty-ellipses, .front-rectangle {
   fill: var(--primary-color);
   transition: fill .5s ease-in-out;
 }
 
-#middleRectangle {
+.middle-rectangle {
   fill: var(--accent-color-green-secondary);
   transition: fill .5s ease-in-out;
 }
 
-#backRectangle {
+.back-rectangle {
   fill: var(--accent-color-green-primary);
   transition: fill .5s ease-in-out;
 }
