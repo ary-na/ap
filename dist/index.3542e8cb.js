@@ -31740,6 +31740,7 @@ const heroSVG = document.querySelector("#heroSVG");
 const logoSVG = document.querySelector("#logo");
 const emptyEllipsesEl = document.querySelector(".empty-ellipses");
 const letterAEl = document.querySelector("#letterA");
+console.log(emptyEllipsesEl);
 // Hero SVG Animation
 (0, _gsapDefault.default).to(heroSVG, {
     rotation: 360,

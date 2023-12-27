@@ -16,6 +16,7 @@ const logoSVG = document.querySelector('#logo')
 const emptyEllipsesEl = document.querySelector('.empty-ellipses')
 const letterAEl = document.querySelector('#letterA')
 
+console.log(emptyEllipsesEl)
 // Hero SVG Animation
 
 gsap.to(heroSVG, {
