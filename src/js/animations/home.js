@@ -15,6 +15,7 @@ const letterAEl = document.querySelector('.letter-a')
 const heroLogo = document.querySelector('.hero-logo')
 
 gsap.registerPlugin(ScrollTrigger)
+ScrollTrigger.config({ignoreMobileResize: true})
 
 // Hero SVG Animation
 
