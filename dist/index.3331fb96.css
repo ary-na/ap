@@ -13867,16 +13867,6 @@ footer img {
   transition: fill .5s ease-in-out;
 }
 
-#heroSVG {
-  width: 75vh;
-}
-
-@media screen and (width >= 768px) {
-  #heroSVG {
-    width: 50vh;
-  }
-}
-
 :root, [data-bs-theme="light"] {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
