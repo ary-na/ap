@@ -8,7 +8,11 @@ setBasePath('/shoelace')
 import '@shoelace-style/shoelace/dist/themes/light.css'
 
 // Import Shoelace JS.
-import '@shoelace-style/shoelace/dist/shoelace.js'
+import '@shoelace-style/shoelace/dist/components/button/button.js'
+import '@shoelace-style/shoelace/dist/components/icon-button/icon-button.js'
+import '@shoelace-style/shoelace/dist/components/input/input.js'
+import '@shoelace-style/shoelace/dist/components/textarea/textarea.js'
+import '@shoelace-style/shoelace/dist/components/dialog/dialog.js'
 
 // Import Bootstrap CSS.
 import 'bootstrap/dist/css/bootstrap.min.css'
