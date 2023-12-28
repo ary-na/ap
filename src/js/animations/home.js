@@ -22,7 +22,7 @@ gsap.to(heroSVG, {
     rotation: 360,
     transformOrigin: "center center",
     scrollTrigger: {
-        trigger: "body",
+        trigger: '#heroSVG',
         start: "top top",
         end: "bottom bottom",
         scrub: true
@@ -33,7 +33,7 @@ gsap.to(heroLogo, {
     rotation: -360,
     transformOrigin: "center center",
     scrollTrigger: {
-        trigger: "body",
+        trigger: '#heroSVG',
         start: "top top",
         end: "bottom bottom",
         scrub: true
@@ -45,8 +45,7 @@ gsap.to(heroLogo, {
 heroSVG.addEventListener('mouseover', applyFill)
 heroSVG.addEventListener('mouseout', removeFill)
 
-function applyFill(e) {
-    e.preventDefault()
+function applyFill() {
     setElementFill(emptyEllipsesEl, secondaryColor)
     setElementFill(letterAEl, secondaryColor)
     setElementFill(frontRectangleEl, "#E3E8E5")
@@ -54,8 +53,7 @@ function applyFill(e) {
     setElementFill(backRectangleEl, secondaryColor)
 }
 
-function removeFill(e) {
-    e.preventDefault()
+function removeFill() {
     setElementFill(emptyEllipsesEl, primaryColor)
     setElementFill(letterAEl, primaryColor)
     setElementFill(frontRectangleEl, primaryColor)
