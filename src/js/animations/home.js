@@ -22,7 +22,7 @@ gsap.to(heroSVG, {
     rotation: 360,
     transformOrigin: "center center",
     scrollTrigger: {
-        trigger: 'main',
+        trigger: 'body',
         start: "top top",
         end: "bottom bottom",
         scrub: true
@@ -33,7 +33,7 @@ gsap.to(heroLogo, {
     rotation: -360,
     transformOrigin: "center center",
     scrollTrigger: {
-        trigger: 'main',
+        trigger: 'body',
         start: "top top",
         end: "bottom bottom",
         scrub: true

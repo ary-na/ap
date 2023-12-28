@@ -1,3 +1,9 @@
+// Import Bootstrap CSS.
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+// Import Bootstrap JS.
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+
 // Import the setBasePath function from Shoelace utilities.
 import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path'
 
@@ -13,12 +19,6 @@ import '@shoelace-style/shoelace/dist/components/icon-button/icon-button.js'
 import '@shoelace-style/shoelace/dist/components/input/input.js'
 import '@shoelace-style/shoelace/dist/components/textarea/textarea.js'
 import '@shoelace-style/shoelace/dist/components/dialog/dialog.js'
-
-// Import Bootstrap CSS.
-import 'bootstrap/dist/css/bootstrap.min.css'
-
-// Import Bootstrap JS.
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 // Import styles.
 import './scss/main.scss'
