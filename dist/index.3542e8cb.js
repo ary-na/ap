@@ -600,7 +600,7 @@ var _contactValidatorJs = require("./js/validators/contactValidator.js");
 // Set the base path to the folder with copied Shoelace's assets.
 (0, _basePath.setBasePath)("/shoelace");
 
-},{"bootstrap/dist/css/bootstrap.min.css":"i5LP7","bootstrap/dist/js/bootstrap.bundle.min.js":"gCRej","@shoelace-style/shoelace/dist/utilities/base-path":"67MCn","@shoelace-style/shoelace/dist/themes/light.css":"jjR64","@shoelace-style/shoelace/dist/components/button/button.js":"9AbKL","@shoelace-style/shoelace/dist/components/icon-button/icon-button.js":"9ii4L","@shoelace-style/shoelace/dist/components/input/input.js":"jCD2h","@shoelace-style/shoelace/dist/components/textarea/textarea.js":"fjMKz","@shoelace-style/shoelace/dist/components/dialog/dialog.js":"2Kqgv","./scss/main.scss":"4Pg3x","./js/animations/home.js":"iJ1B3","./js/forms/contactHandler.js":"fwcEn","./js/utilities/getCurrentYear.js":"276IT","./js/utilities/loadBaseUrl.js":"hr1d0","./js/validators/contactValidator.js":"copBE"}],"i5LP7":[function() {},{}],"gCRej":[function(require,module,exports) {
+},{"bootstrap/dist/css/bootstrap.min.css":"i5LP7","bootstrap/dist/js/bootstrap.bundle.min.js":"gCRej","@shoelace-style/shoelace/dist/utilities/base-path":"67MCn","@shoelace-style/shoelace/dist/themes/light.css":"jjR64","@shoelace-style/shoelace/dist/components/button/button.js":"9AbKL","@shoelace-style/shoelace/dist/components/icon-button/icon-button.js":"9ii4L","@shoelace-style/shoelace/dist/components/input/input.js":"jCD2h","@shoelace-style/shoelace/dist/components/textarea/textarea.js":"fjMKz","@shoelace-style/shoelace/dist/components/dialog/dialog.js":"2Kqgv","./js/animations/home.js":"iJ1B3","./js/forms/contactHandler.js":"fwcEn","./js/utilities/getCurrentYear.js":"276IT","./js/utilities/loadBaseUrl.js":"hr1d0","./js/validators/contactValidator.js":"copBE","./scss/main.scss":"4Pg3x"}],"i5LP7":[function() {},{}],"gCRej":[function(require,module,exports) {
 /*!
   * Bootstrap v5.3.2 (https://getbootstrap.com/)
   * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
@@ -9380,16 +9380,12 @@ function shimKeyframesHeightAuto(keyframes, calculatedHeight) {
         }));
 }
 
-},{"./chunk.MAD5PUM2.js":"2XQeN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4Pg3x":[function() {},{}],"iJ1B3":[function(require,module,exports) {
+},{"./chunk.MAD5PUM2.js":"2XQeN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iJ1B3":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _gsap = require("gsap");
 var _gsapDefault = parcelHelpers.interopDefault(_gsap);
 var _scrollTrigger = require("gsap/ScrollTrigger");
 var _scrollTriggerDefault = parcelHelpers.interopDefault(_scrollTrigger);
-const primaryColor = getComputedStyle(document.documentElement).getPropertyValue("--primary-color");
-const secondaryColor = getComputedStyle(document.documentElement).getPropertyValue("--secondary-color");
-const accentColorPrimary = getComputedStyle(document.documentElement).getPropertyValue("--accent-color-green-primary");
-const accentColorSecondary = getComputedStyle(document.documentElement).getPropertyValue("--accent-color-green-secondary");
 const heroSVG = document.querySelector("#heroSVG");
 const frontRectangleEl = document.querySelector(".front-rectangle");
 const middleRectangleEl = document.querySelector(".middle-rectangle");
@@ -9397,6 +9393,27 @@ const backRectangleEl = document.querySelector(".back-rectangle");
 const emptyEllipsesEl = document.querySelector(".empty-ellipses");
 const letterAEl = document.querySelector(".letter-a");
 const heroLogo = document.querySelector(".hero-logo");
+// Event listeners for heroSVG
+heroSVG.addEventListener("mouseover", applyFill);
+heroSVG.addEventListener("mouseout", removeFill);
+function applyFill() {
+    setElementFill(emptyEllipsesEl, "#f2f4f3");
+    setElementFill(letterAEl, "#f2f4f3");
+    setElementFill(frontRectangleEl, "#E3E8E5");
+    setElementFill(middleRectangleEl, "#FFFFFF");
+    setElementFill(backRectangleEl, "#f2f4f3");
+}
+function removeFill() {
+    setElementFill(emptyEllipsesEl, "#15616d");
+    setElementFill(letterAEl, "#15616d");
+    setElementFill(frontRectangleEl, "#15616d");
+    setElementFill(middleRectangleEl, "#1D8596");
+    setElementFill(backRectangleEl, "#197280");
+}
+// Helper function to set element fill color
+function setElementFill(element, color) {
+    if (element) element.style.fill = color;
+}
 (0, _gsapDefault.default).registerPlugin((0, _scrollTriggerDefault.default));
 (0, _scrollTriggerDefault.default).config({
     ignoreMobileResize: true
@@ -9422,27 +9439,6 @@ const heroLogo = document.querySelector(".hero-logo");
         scrub: true
     }
 });
-// Event listeners for heroSVG
-heroSVG.addEventListener("mouseover", applyFill);
-heroSVG.addEventListener("mouseout", removeFill);
-function applyFill() {
-    setElementFill(emptyEllipsesEl, secondaryColor);
-    setElementFill(letterAEl, secondaryColor);
-    setElementFill(frontRectangleEl, "#E3E8E5");
-    setElementFill(middleRectangleEl, "#FFFFFF");
-    setElementFill(backRectangleEl, secondaryColor);
-}
-function removeFill() {
-    setElementFill(emptyEllipsesEl, primaryColor);
-    setElementFill(letterAEl, primaryColor);
-    setElementFill(frontRectangleEl, primaryColor);
-    setElementFill(middleRectangleEl, accentColorSecondary);
-    setElementFill(backRectangleEl, accentColorPrimary);
-}
-// Helper function to set element fill color
-function setElementFill(element, color) {
-    if (element) element.style.fill = color;
-}
 (0, _gsapDefault.default).to(".glass-container", {
     scrollTrigger: {
         trigger: ".glass-container",
@@ -52359,6 +52355,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     window.history.replaceState({}, document.title, baseUrl);
 });
 
-},{}]},["jlY1x","8lqZg"], "8lqZg", "parcelRequire1323")
+},{}],"4Pg3x":[function() {},{}]},["jlY1x","8lqZg"], "8lqZg", "parcelRequire1323")
 
 //# sourceMappingURL=index.3542e8cb.js.map

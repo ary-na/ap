@@ -20,12 +20,12 @@ import '@shoelace-style/shoelace/dist/components/input/input.js'
 import '@shoelace-style/shoelace/dist/components/textarea/textarea.js'
 import '@shoelace-style/shoelace/dist/components/dialog/dialog.js'
 
+// Import styles.
+import './scss/main.scss'
+
 // Import project's JS files.
 import './js/animations/home.js'
 import './js/forms/contactHandler.js'
 import './js/utilities/getCurrentYear.js'
 import './js/utilities/loadBaseUrl.js'
 import './js/validators/contactValidator.js'
-
-// Import styles.
-import './scss/main.scss'

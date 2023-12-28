@@ -1,11 +1,6 @@
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 
-const primaryColor = getComputedStyle(document.documentElement).getPropertyValue('--primary-color')
-const secondaryColor = getComputedStyle(document.documentElement).getPropertyValue('--secondary-color')
-const accentColorPrimary = getComputedStyle(document.documentElement).getPropertyValue('--accent-color-green-primary')
-const accentColorSecondary = getComputedStyle(document.documentElement).getPropertyValue('--accent-color-green-secondary')
-
 const heroSVG = document.querySelector('#heroSVG')
 const frontRectangleEl = document.querySelector('.front-rectangle')
 const middleRectangleEl = document.querySelector('.middle-rectangle')
@@ -20,19 +15,19 @@ heroSVG.addEventListener('mouseover', applyFill)
 heroSVG.addEventListener('mouseout', removeFill)
 
 function applyFill() {
-    setElementFill(emptyEllipsesEl, "white")
-    setElementFill(letterAEl, "white")
+    setElementFill(emptyEllipsesEl, "#f2f4f3")
+    setElementFill(letterAEl, "#f2f4f3")
     setElementFill(frontRectangleEl, "#E3E8E5")
     setElementFill(middleRectangleEl, "#FFFFFF")
-    setElementFill(backRectangleEl, "white")
+    setElementFill(backRectangleEl, "#f2f4f3")
 }
 
 function removeFill() {
-    setElementFill(emptyEllipsesEl, primaryColor)
-    setElementFill(letterAEl, primaryColor)
-    setElementFill(frontRectangleEl, primaryColor)
-    setElementFill(middleRectangleEl, accentColorSecondary)
-    setElementFill(backRectangleEl, accentColorPrimary)
+    setElementFill(emptyEllipsesEl, "#15616d")
+    setElementFill(letterAEl, "#15616d")
+    setElementFill(frontRectangleEl, "#15616d")
+    setElementFill(middleRectangleEl, "#1D8596")
+    setElementFill(backRectangleEl, "#197280")
 }
 
 // Helper function to set element fill color
