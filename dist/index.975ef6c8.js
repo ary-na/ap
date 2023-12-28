@@ -9399,27 +9399,28 @@ const emptyEllipsesEl = document.querySelector(".empty-ellipses");
 const letterAEl = document.querySelector(".letter-a");
 const heroLogo = document.querySelector(".hero-logo");
 // Hero SVG Animation
-// gsap.to(heroSVG, {
-//     rotation: 360,
-//     transformOrigin: "center center",
-//     scrollTrigger: {
-//         trigger: 'body',
-//         start: "top top",
-//         end: "bottom bottom",
-//         scrub: true
-//     }
-// })
-//
-// gsap.to(heroLogo, {
-//     rotation: -360,
-//     transformOrigin: "center center",
-//     scrollTrigger: {
-//         trigger: '#heroSVG',
-//         start: "top top",
-//         end: "bottom bottom",
-//         scrub: true
-//     }
-// })
+(0, _gsapDefault.default).to(heroSVG, {
+    rotation: 360,
+    transformOrigin: "center center",
+    scrollTrigger: {
+        trigger: "body",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true,
+        delay: 0.2
+    }
+});
+(0, _gsapDefault.default).to(heroLogo, {
+    rotation: -360,
+    transformOrigin: "center center",
+    scrollTrigger: {
+        trigger: "body",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true,
+        delay: 0.2
+    }
+});
 // Event listeners for heroSVG
 heroSVG.addEventListener("mouseover", applyFill);
 heroSVG.addEventListener("mouseout", removeFill);
@@ -9440,18 +9441,19 @@ function removeFill() {
 // Helper function to set element fill color
 function setElementFill(element, color) {
     if (element) element.style.fill = color;
-} // // About me Animation
- //
- // gsap.to(".glass-container", {
- //     scrollTrigger: {
- //         trigger: '.glass-container',
- //         start: 'top center',
- //         end: 'bottom center',
- //         scrub: true,
- //     },
- //     y: 30,
- //     ease: "ease",
- // })
+}
+// About me Animation
+(0, _gsapDefault.default).to(".glass-container", {
+    scrollTrigger: {
+        trigger: ".glass-container",
+        start: "top center",
+        end: "bottom center",
+        scrub: true
+    },
+    y: 30,
+    ease: "ease",
+    delay: 0.2
+});
 
 },{"gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fPSuC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
