@@ -18,19 +18,8 @@ gsap.registerPlugin(ScrollTrigger)
 
 // Hero SVG Animation
 
-gsap.to(heroSVG, {
-    rotation: 360,
-    transformOrigin: "center center",
-    scrollTrigger: {
-        trigger: 'body',
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true
-    }
-})
-
-// gsap.to(heroLogo, {
-//     rotation: -360,
+// gsap.to(heroSVG, {
+//     rotation: 360,
 //     transformOrigin: "center center",
 //     scrollTrigger: {
 //         trigger: 'body',
@@ -39,6 +28,17 @@ gsap.to(heroSVG, {
 //         scrub: true
 //     }
 // })
+
+gsap.to(heroLogo, {
+    rotation: -360,
+    transformOrigin: "center center",
+    scrollTrigger: {
+        trigger: 'body',
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true
+    }
+})
 
 // Event listeners for heroSVG
 

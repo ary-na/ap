@@ -9399,18 +9399,8 @@ const letterAEl = document.querySelector(".letter-a");
 const heroLogo = document.querySelector(".hero-logo");
 (0, _gsapDefault.default).registerPlugin((0, _scrollTriggerDefault.default));
 // Hero SVG Animation
-(0, _gsapDefault.default).to(heroSVG, {
-    rotation: 360,
-    transformOrigin: "center center",
-    scrollTrigger: {
-        trigger: "body",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true
-    }
-});
-// gsap.to(heroLogo, {
-//     rotation: -360,
+// gsap.to(heroSVG, {
+//     rotation: 360,
 //     transformOrigin: "center center",
 //     scrollTrigger: {
 //         trigger: 'body',
@@ -9419,6 +9409,16 @@ const heroLogo = document.querySelector(".hero-logo");
 //         scrub: true
 //     }
 // })
+(0, _gsapDefault.default).to(heroLogo, {
+    rotation: -360,
+    transformOrigin: "center center",
+    scrollTrigger: {
+        trigger: "body",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true
+    }
+});
 // Event listeners for heroSVG
 heroSVG.addEventListener("mouseover", applyFill);
 heroSVG.addEventListener("mouseout", removeFill);
