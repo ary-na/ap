@@ -24,6 +24,7 @@ import '@shoelace-style/shoelace/dist/components/dialog/dialog.js'
 import './scss/main.scss'
 
 // Import project's JS files.
+import './js/animations/aboutMe.js'
 import './js/animations/home.js'
 import './js/forms/contactHandler.js'
 import './js/utilities/getCurrentYear.js'

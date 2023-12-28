@@ -592,6 +592,7 @@ var _dialogJs = require("@shoelace-style/shoelace/dist/components/dialog/dialog.
 // Import styles.
 var _mainScss = require("./scss/main.scss");
 // Import project's JS files.
+var _aboutMeJs = require("./js/animations/aboutMe.js");
 var _homeJs = require("./js/animations/home.js");
 var _contactHandlerJs = require("./js/forms/contactHandler.js");
 var _getCurrentYearJs = require("./js/utilities/getCurrentYear.js");
@@ -600,7 +601,7 @@ var _contactValidatorJs = require("./js/validators/contactValidator.js");
 // Set the base path to the folder with copied Shoelace's assets.
 (0, _basePath.setBasePath)("/shoelace");
 
-},{"bootstrap/dist/css/bootstrap.min.css":"i5LP7","bootstrap/dist/js/bootstrap.bundle.min.js":"gCRej","@shoelace-style/shoelace/dist/utilities/base-path":"67MCn","@shoelace-style/shoelace/dist/themes/light.css":"jjR64","@shoelace-style/shoelace/dist/components/button/button.js":"9AbKL","@shoelace-style/shoelace/dist/components/icon-button/icon-button.js":"9ii4L","@shoelace-style/shoelace/dist/components/input/input.js":"jCD2h","@shoelace-style/shoelace/dist/components/textarea/textarea.js":"fjMKz","@shoelace-style/shoelace/dist/components/dialog/dialog.js":"2Kqgv","./scss/main.scss":"4Pg3x","./js/animations/home.js":"iJ1B3","./js/forms/contactHandler.js":"fwcEn","./js/utilities/getCurrentYear.js":"276IT","./js/utilities/loadBaseUrl.js":"hr1d0","./js/validators/contactValidator.js":"copBE"}],"i5LP7":[function() {},{}],"gCRej":[function(require,module,exports) {
+},{"bootstrap/dist/css/bootstrap.min.css":"i5LP7","bootstrap/dist/js/bootstrap.bundle.min.js":"gCRej","@shoelace-style/shoelace/dist/utilities/base-path":"67MCn","@shoelace-style/shoelace/dist/themes/light.css":"jjR64","@shoelace-style/shoelace/dist/components/button/button.js":"9AbKL","@shoelace-style/shoelace/dist/components/icon-button/icon-button.js":"9ii4L","@shoelace-style/shoelace/dist/components/input/input.js":"jCD2h","@shoelace-style/shoelace/dist/components/textarea/textarea.js":"fjMKz","@shoelace-style/shoelace/dist/components/dialog/dialog.js":"2Kqgv","./scss/main.scss":"4Pg3x","./js/animations/home.js":"iJ1B3","./js/forms/contactHandler.js":"fwcEn","./js/utilities/getCurrentYear.js":"276IT","./js/utilities/loadBaseUrl.js":"hr1d0","./js/validators/contactValidator.js":"copBE","./js/animations/aboutMe.js":"1peWl"}],"i5LP7":[function() {},{}],"gCRej":[function(require,module,exports) {
 /*!
   * Bootstrap v5.3.2 (https://getbootstrap.com/)
   * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
@@ -9440,17 +9441,6 @@ function removeFill() {
 function setElementFill(element, color) {
     if (element) element.style.fill = color;
 }
-// About me Animation
-(0, _gsapDefault.default).to(".glass-container", {
-    scrollTrigger: {
-        trigger: ".glass-container",
-        start: "top center",
-        end: "bottom center",
-        scrub: true
-    },
-    y: 30,
-    ease: "ease"
-});
 
 },{"gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fPSuC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -52357,6 +52347,24 @@ document.addEventListener("DOMContentLoaded", ()=>{
     window.history.replaceState({}, document.title, baseUrl);
 });
 
-},{}]},["icZzK","8lqZg"], "8lqZg", "parcelRequire1323")
+},{}],"1peWl":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _gsap = require("gsap");
+var _gsapDefault = parcelHelpers.interopDefault(_gsap);
+var _scrollTrigger = require("gsap/ScrollTrigger");
+var _scrollTriggerDefault = parcelHelpers.interopDefault(_scrollTrigger);
+(0, _gsapDefault.default).registerPlugin((0, _scrollTriggerDefault.default));
+(0, _gsapDefault.default).to(".glass-container", {
+    scrollTrigger: {
+        trigger: ".glass-container",
+        start: "top center",
+        end: "bottom center",
+        scrub: true
+    },
+    y: 30,
+    ease: "ease"
+});
+
+},{"gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["icZzK","8lqZg"], "8lqZg", "parcelRequire1323")
 
 //# sourceMappingURL=index.975ef6c8.js.map

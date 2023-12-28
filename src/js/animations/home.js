@@ -68,16 +68,3 @@ function setElementFill(element, color) {
         element.style.fill = color
     }
 }
-
-// About me Animation
-
-gsap.to(".glass-container", {
-    scrollTrigger: {
-        trigger: '.glass-container',
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true
-    },
-    y: 30,
-    ease: "ease",
-})
