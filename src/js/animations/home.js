@@ -18,16 +18,16 @@ const heroLogo = document.querySelector('.hero-logo')
 
 // Hero SVG Animation
 
-gsap.to(heroSVG, {
-    rotation: 360,
-    transformOrigin: "center center",
-    scrollTrigger: {
-        trigger: 'body',
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true
-    }
-})
+// gsap.to(heroSVG, {
+//     rotation: 360,
+//     transformOrigin: "center center",
+//     scrollTrigger: {
+//         trigger: 'body',
+//         start: "top top",
+//         end: "bottom bottom",
+//         scrub: true
+//     }
+// })
 
 // gsap.to(heroLogo, {
 //     rotation: -360,
