@@ -14,33 +14,6 @@ const emptyEllipsesEl = document.querySelector('.empty-ellipses')
 const letterAEl = document.querySelector('.letter-a')
 const heroLogo = document.querySelector('.hero-logo')
 
-gsap.registerPlugin(ScrollTrigger)
-ScrollTrigger.config({ignoreMobileResize: true})
-
-// Hero SVG Animation
-
-gsap.to(heroSVG, {
-    rotation: 360,
-    transformOrigin: "center center",
-    scrollTrigger: {
-        trigger: 'body',
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true
-    }
-})
-
-gsap.to(heroLogo, {
-    rotation: -360,
-    transformOrigin: "center center",
-    scrollTrigger: {
-        trigger: 'body',
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true
-    }
-})
-
 // Event listeners for heroSVG
 
 heroSVG.addEventListener('mouseover', applyFill)
@@ -69,6 +42,33 @@ function setElementFill(element, color) {
         element.style.fill = color
     }
 }
+
+gsap.registerPlugin(ScrollTrigger)
+ScrollTrigger.config({ignoreMobileResize: true})
+
+// Hero SVG Animation
+
+gsap.to(heroSVG, {
+    rotation: 360,
+    transformOrigin: "center center",
+    scrollTrigger: {
+        trigger: 'body',
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true
+    }
+})
+
+gsap.to(heroLogo, {
+    rotation: -360,
+    transformOrigin: "center center",
+    scrollTrigger: {
+        trigger: 'body',
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true
+    }
+})
 
 gsap.to(".glass-container", {
     scrollTrigger: {

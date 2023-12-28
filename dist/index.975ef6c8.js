@@ -9397,6 +9397,27 @@ const backRectangleEl = document.querySelector(".back-rectangle");
 const emptyEllipsesEl = document.querySelector(".empty-ellipses");
 const letterAEl = document.querySelector(".letter-a");
 const heroLogo = document.querySelector(".hero-logo");
+// Event listeners for heroSVG
+heroSVG.addEventListener("mouseover", applyFill);
+heroSVG.addEventListener("mouseout", removeFill);
+function applyFill() {
+    setElementFill(emptyEllipsesEl, secondaryColor);
+    setElementFill(letterAEl, secondaryColor);
+    setElementFill(frontRectangleEl, "#E3E8E5");
+    setElementFill(middleRectangleEl, "#FFFFFF");
+    setElementFill(backRectangleEl, secondaryColor);
+}
+function removeFill() {
+    setElementFill(emptyEllipsesEl, primaryColor);
+    setElementFill(letterAEl, primaryColor);
+    setElementFill(frontRectangleEl, primaryColor);
+    setElementFill(middleRectangleEl, accentColorSecondary);
+    setElementFill(backRectangleEl, accentColorPrimary);
+}
+// Helper function to set element fill color
+function setElementFill(element, color) {
+    if (element) element.style.fill = color;
+}
 (0, _gsapDefault.default).registerPlugin((0, _scrollTriggerDefault.default));
 (0, _scrollTriggerDefault.default).config({
     ignoreMobileResize: true
@@ -9422,27 +9443,6 @@ const heroLogo = document.querySelector(".hero-logo");
         scrub: true
     }
 });
-// Event listeners for heroSVG
-heroSVG.addEventListener("mouseover", applyFill);
-heroSVG.addEventListener("mouseout", removeFill);
-function applyFill() {
-    setElementFill(emptyEllipsesEl, secondaryColor);
-    setElementFill(letterAEl, secondaryColor);
-    setElementFill(frontRectangleEl, "#E3E8E5");
-    setElementFill(middleRectangleEl, "#FFFFFF");
-    setElementFill(backRectangleEl, secondaryColor);
-}
-function removeFill() {
-    setElementFill(emptyEllipsesEl, primaryColor);
-    setElementFill(letterAEl, primaryColor);
-    setElementFill(frontRectangleEl, primaryColor);
-    setElementFill(middleRectangleEl, accentColorSecondary);
-    setElementFill(backRectangleEl, accentColorPrimary);
-}
-// Helper function to set element fill color
-function setElementFill(element, color) {
-    if (element) element.style.fill = color;
-}
 (0, _gsapDefault.default).to(".glass-container", {
     scrollTrigger: {
         trigger: ".glass-container",
