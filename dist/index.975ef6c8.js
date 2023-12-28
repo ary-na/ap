@@ -9401,11 +9401,11 @@ const heroLogo = document.querySelector(".hero-logo");
 heroSVG.addEventListener("mouseover", applyFill);
 heroSVG.addEventListener("mouseout", removeFill);
 function applyFill() {
-    setElementFill(emptyEllipsesEl, secondaryColor);
-    setElementFill(letterAEl, secondaryColor);
+    setElementFill(emptyEllipsesEl, "white");
+    setElementFill(letterAEl, "white");
     setElementFill(frontRectangleEl, "#E3E8E5");
     setElementFill(middleRectangleEl, "#FFFFFF");
-    setElementFill(backRectangleEl, secondaryColor);
+    setElementFill(backRectangleEl, "white");
 }
 function removeFill() {
     setElementFill(emptyEllipsesEl, primaryColor);
