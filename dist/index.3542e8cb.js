@@ -52346,15 +52346,18 @@ const yearEl = document.querySelector("#year");
 yearEl.innerHTML = currentDate.getFullYear().toString();
 
 },{}],"hr1d0":[function(require,module,exports) {
-document.addEventListener("DOMContentLoaded", ()=>{
-    const urlString = window.location.href;
-    // Creating a URL object
-    const url = new URL(urlString);
-    // Removing the path and keeping only the base URL
-    const baseUrl = `${url.protocol}//${url.hostname}${url.port ? `:${url.port}` : ""}`;
-    // Replace the current URL with the one without the hash
-    window.history.replaceState({}, document.title, baseUrl);
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//     const urlString = window.location.href
+//
+//     // Creating a URL object
+//     const url = new URL(urlString)
+//
+//     // Removing the path and keeping only the base URL
+//     const baseUrl = `${url.protocol}//${url.hostname}${url.port ? `:${url.port}` : ''}`
+//
+//     // Replace the current URL with the one without the hash
+//     window.history.replaceState({}, document.title, baseUrl)
+// })
 
 },{}]},["jlY1x","8lqZg"], "8lqZg", "parcelRequire1323")
 
