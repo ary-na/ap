@@ -18,27 +18,27 @@ const heroLogo = document.querySelector('.hero-logo')
 
 // Hero SVG Animation
 
-// gsap.to(heroSVG, {
-//     rotation: 360,
-//     transformOrigin: "center center",
-//     scrollTrigger: {
-//         trigger: 'body',
-//         start: "top top",
-//         end: "bottom bottom",
-//         scrub: true
-//     }
-// })
+gsap.to(heroSVG, {
+    rotation: 360,
+    transformOrigin: "center center",
+    scrollTrigger: {
+        trigger: 'body',
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true
+    }
+})
 
-// gsap.to(heroLogo, {
-//     rotation: -360,
-//     transformOrigin: "center center",
-//     scrollTrigger: {
-//         trigger: '#heroSVG',
-//         start: "top top",
-//         end: "bottom bottom",
-//         scrub: true
-//     }
-// })
+gsap.to(heroLogo, {
+    rotation: -360,
+    transformOrigin: "center center",
+    scrollTrigger: {
+        trigger: '#heroSVG',
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true
+    }
+})
 
 // Event listeners for heroSVG
 
@@ -69,15 +69,15 @@ function setElementFill(element, color) {
     }
 }
 
-// About me Animation
-
-gsap.to(".glass-container", {
-    scrollTrigger: {
-        trigger: '.glass-container',
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-    },
-    y: 30,
-    ease: "ease",
-})
+// // About me Animation
+//
+// gsap.to(".glass-container", {
+//     scrollTrigger: {
+//         trigger: '.glass-container',
+//         start: 'top center',
+//         end: 'bottom center',
+//         scrub: true,
+//     },
+//     y: 30,
+//     ease: "ease",
+// })
