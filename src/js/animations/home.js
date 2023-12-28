@@ -76,9 +76,8 @@ gsap.to(".glass-container", {
         trigger: '.glass-container',
         start: 'top center',
         end: 'bottom center',
-        scrub: 1,
+        scrub: true,
     },
     y: 30,
     ease: "ease",
-    duration: 3
 })

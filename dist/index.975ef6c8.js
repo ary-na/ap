@@ -9446,11 +9446,10 @@ function setElementFill(element, color) {
         trigger: ".glass-container",
         start: "top center",
         end: "bottom center",
-        scrub: 1
+        scrub: true
     },
     y: 30,
-    ease: "ease",
-    duration: 3
+    ease: "ease"
 });
 
 },{"gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fPSuC":[function(require,module,exports) {
