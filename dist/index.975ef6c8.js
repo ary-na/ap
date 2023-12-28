@@ -9398,6 +9398,9 @@ const emptyEllipsesEl = document.querySelector(".empty-ellipses");
 const letterAEl = document.querySelector(".letter-a");
 const heroLogo = document.querySelector(".hero-logo");
 (0, _gsapDefault.default).registerPlugin((0, _scrollTriggerDefault.default));
+(0, _scrollTriggerDefault.default).config({
+    ignoreMobileResize: true
+});
 // Hero SVG Animation
 (0, _gsapDefault.default).to(heroSVG, {
     rotation: 360,
