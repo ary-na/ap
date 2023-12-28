@@ -9386,7 +9386,6 @@ var _gsap = require("gsap");
 var _gsapDefault = parcelHelpers.interopDefault(_gsap);
 var _scrollTrigger = require("gsap/ScrollTrigger");
 var _scrollTriggerDefault = parcelHelpers.interopDefault(_scrollTrigger);
-(0, _gsapDefault.default).registerPlugin((0, _scrollTriggerDefault.default));
 const primaryColor = getComputedStyle(document.documentElement).getPropertyValue("--primary-color");
 const secondaryColor = getComputedStyle(document.documentElement).getPropertyValue("--secondary-color");
 const accentColorPrimary = getComputedStyle(document.documentElement).getPropertyValue("--accent-color-green-primary");
@@ -9398,6 +9397,7 @@ const backRectangleEl = document.querySelector(".back-rectangle");
 const emptyEllipsesEl = document.querySelector(".empty-ellipses");
 const letterAEl = document.querySelector(".letter-a");
 const heroLogo = document.querySelector(".hero-logo");
+(0, _gsapDefault.default).registerPlugin((0, _scrollTriggerDefault.default));
 // Hero SVG Animation
 (0, _gsapDefault.default).to(heroSVG, {
     rotation: 360,

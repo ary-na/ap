@@ -1,8 +1,6 @@
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger)
-
 const primaryColor = getComputedStyle(document.documentElement).getPropertyValue('--primary-color')
 const secondaryColor = getComputedStyle(document.documentElement).getPropertyValue('--secondary-color')
 const accentColorPrimary = getComputedStyle(document.documentElement).getPropertyValue('--accent-color-green-primary')
@@ -15,6 +13,8 @@ const backRectangleEl = document.querySelector('.back-rectangle')
 const emptyEllipsesEl = document.querySelector('.empty-ellipses')
 const letterAEl = document.querySelector('.letter-a')
 const heroLogo = document.querySelector('.hero-logo')
+
+gsap.registerPlugin(ScrollTrigger)
 
 // Hero SVG Animation
 
