@@ -52364,6 +52364,7 @@ var _scrollTriggerDefault = parcelHelpers.interopDefault(_scrollTrigger);
     y: 30,
     ease: "ease"
 });
+(0, _scrollTriggerDefault.default).refresh();
 
 },{"gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["icZzK","8lqZg"], "8lqZg", "parcelRequire1323")
 

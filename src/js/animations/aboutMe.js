@@ -13,3 +13,5 @@ gsap.to(".glass-container", {
     y: 30,
     ease: "ease",
 })
+
+ScrollTrigger.refresh()
