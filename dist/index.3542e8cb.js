@@ -9419,29 +9419,36 @@ const heroLogo = document.querySelector(".hero-logo");
         scrub: true
     }
 });
-// Event listeners for heroSVG
-heroSVG.addEventListener("mouseover", applyFill);
-heroSVG.addEventListener("mouseout", removeFill);
-function applyFill(e) {
-    e.preventDefault();
-    setElementFill(emptyEllipsesEl, secondaryColor);
-    setElementFill(letterAEl, secondaryColor);
-    setElementFill(frontRectangleEl, "#E3E8E5");
-    setElementFill(middleRectangleEl, "#FFFFFF");
-    setElementFill(backRectangleEl, secondaryColor);
-}
-function removeFill(e) {
-    e.preventDefault();
-    setElementFill(emptyEllipsesEl, primaryColor);
-    setElementFill(letterAEl, primaryColor);
-    setElementFill(frontRectangleEl, primaryColor);
-    setElementFill(middleRectangleEl, accentColorSecondary);
-    setElementFill(backRectangleEl, accentColorPrimary);
-}
-// Helper function to set element fill color
-function setElementFill(element, color) {
-    if (element) element.style.fill = color;
-}
+// // Event listeners for heroSVG
+//
+// heroSVG.addEventListener('mouseover', applyFill)
+// heroSVG.addEventListener('mouseout', removeFill)
+//
+// function applyFill(e) {
+//     e.preventDefault()
+//     setElementFill(emptyEllipsesEl, secondaryColor)
+//     setElementFill(letterAEl, secondaryColor)
+//     setElementFill(frontRectangleEl, "#E3E8E5")
+//     setElementFill(middleRectangleEl, "#FFFFFF")
+//     setElementFill(backRectangleEl, secondaryColor)
+// }
+//
+// function removeFill(e) {
+//     e.preventDefault()
+//     setElementFill(emptyEllipsesEl, primaryColor)
+//     setElementFill(letterAEl, primaryColor)
+//     setElementFill(frontRectangleEl, primaryColor)
+//     setElementFill(middleRectangleEl, accentColorSecondary)
+//     setElementFill(backRectangleEl, accentColorPrimary)
+// }
+//
+// // Helper function to set element fill color
+//
+// function setElementFill(element, color) {
+//     if (element) {
+//         element.style.fill = color
+//     }
+// }
 // About me Animation
 (0, _gsapDefault.default).to(".glass-container", {
     scrollTrigger: {
