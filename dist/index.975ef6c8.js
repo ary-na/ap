@@ -9403,22 +9403,20 @@ const heroLogo = document.querySelector(".hero-logo");
     rotation: 360,
     transformOrigin: "center center",
     scrollTrigger: {
-        trigger: "body",
+        trigger: "main",
         start: "top top",
         end: "bottom bottom",
-        scrub: true,
-        delay: 1
+        scrub: true
     }
 });
 (0, _gsapDefault.default).to(heroLogo, {
     rotation: -360,
     transformOrigin: "center center",
     scrollTrigger: {
-        trigger: "body",
+        trigger: "main",
         start: "top top",
         end: "bottom bottom",
-        scrub: true,
-        delay: 1
+        scrub: true
     }
 });
 // Event listeners for heroSVG
@@ -9451,8 +9449,7 @@ function setElementFill(element, color) {
         scrub: true
     },
     y: 30,
-    ease: "ease",
-    delay: 1
+    ease: "ease"
 });
 
 },{"gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fPSuC":[function(require,module,exports) {

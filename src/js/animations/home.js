@@ -22,11 +22,10 @@ gsap.to(heroSVG, {
     rotation: 360,
     transformOrigin: "center center",
     scrollTrigger: {
-        trigger: 'body',
+        trigger: 'main',
         start: "top top",
         end: "bottom bottom",
-        scrub: true,
-        delay: 1
+        scrub: true
     }
 })
 
@@ -34,11 +33,10 @@ gsap.to(heroLogo, {
     rotation: -360,
     transformOrigin: "center center",
     scrollTrigger: {
-        trigger: 'body',
+        trigger: 'main',
         start: "top top",
         end: "bottom bottom",
-        scrub: true,
-        delay: 1
+        scrub: true
     }
 })
 
@@ -78,9 +76,8 @@ gsap.to(".glass-container", {
         trigger: '.glass-container',
         start: 'top center',
         end: 'bottom center',
-        scrub: true,
+        scrub: true
     },
     y: 30,
     ease: "ease",
-    delay: 1
 })
