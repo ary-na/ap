@@ -20,12 +20,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 // Import Bootstrap JS.
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
+// Import styles.
+import './scss/main.scss'
+
 // Import project's JS files.
 import './js/animations/home.js'
 import './js/forms/contactHandler.js'
 import './js/utilities/getCurrentYear.js'
 import './js/utilities/loadBaseUrl.js'
 import './js/validators/contactValidator.js'
-
-// Import styles.
-import './scss/main.scss'
