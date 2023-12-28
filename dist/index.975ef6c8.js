@@ -589,14 +589,14 @@ var _iconButtonJs = require("@shoelace-style/shoelace/dist/components/icon-butto
 var _inputJs = require("@shoelace-style/shoelace/dist/components/input/input.js");
 var _textareaJs = require("@shoelace-style/shoelace/dist/components/textarea/textarea.js");
 var _dialogJs = require("@shoelace-style/shoelace/dist/components/dialog/dialog.js");
-// Import styles.
-var _mainScss = require("./scss/main.scss");
 // Import project's JS files.
 var _homeJs = require("./js/animations/home.js");
 var _contactHandlerJs = require("./js/forms/contactHandler.js");
 var _getCurrentYearJs = require("./js/utilities/getCurrentYear.js");
 var _loadBaseUrlJs = require("./js/utilities/loadBaseUrl.js");
 var _contactValidatorJs = require("./js/validators/contactValidator.js");
+// Import styles.
+var _mainScss = require("./scss/main.scss");
 // Set the base path to the folder with copied Shoelace's assets.
 (0, _basePath.setBasePath)("/shoelace");
 
