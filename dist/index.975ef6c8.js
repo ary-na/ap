@@ -9407,7 +9407,7 @@ const heroLogo = document.querySelector(".hero-logo");
         start: "top top",
         end: "bottom bottom",
         scrub: true,
-        delay: 0.5
+        delay: 1
     }
 });
 (0, _gsapDefault.default).to(heroLogo, {
@@ -9418,7 +9418,7 @@ const heroLogo = document.querySelector(".hero-logo");
         start: "top top",
         end: "bottom bottom",
         scrub: true,
-        delay: 0.5
+        delay: 1
     }
 });
 // Event listeners for heroSVG
@@ -9452,7 +9452,7 @@ function setElementFill(element, color) {
     },
     y: 30,
     ease: "ease",
-    delay: 0.5
+    delay: 1
 });
 
 },{"gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fPSuC":[function(require,module,exports) {
