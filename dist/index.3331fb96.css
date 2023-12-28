@@ -13815,11 +13815,6 @@ h2, .h2 {
   font-family: var(--secondary-font-family);
 }
 
-footer img {
-  width: 80px;
-  height: auto;
-}
-
 .glass-container {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
