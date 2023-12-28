@@ -9399,26 +9399,27 @@ const emptyEllipsesEl = document.querySelector(".empty-ellipses");
 const letterAEl = document.querySelector(".letter-a");
 const heroLogo = document.querySelector(".hero-logo");
 // Hero SVG Animation
-(0, _gsapDefault.default).to(heroSVG, {
-    rotation: 360,
-    transformOrigin: "center center",
-    scrollTrigger: {
-        trigger: "body",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true
-    }
-});
-(0, _gsapDefault.default).to(heroLogo, {
-    rotation: -360,
-    transformOrigin: "center center",
-    scrollTrigger: {
-        trigger: "#heroSVG",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true
-    }
-});
+// gsap.to(heroSVG, {
+//     rotation: 360,
+//     transformOrigin: "center center",
+//     scrollTrigger: {
+//         trigger: 'body',
+//         start: "top top",
+//         end: "bottom bottom",
+//         scrub: true
+//     }
+// })
+//
+// gsap.to(heroLogo, {
+//     rotation: -360,
+//     transformOrigin: "center center",
+//     scrollTrigger: {
+//         trigger: '#heroSVG',
+//         start: "top top",
+//         end: "bottom bottom",
+//         scrub: true
+//     }
+// })
 // Event listeners for heroSVG
 heroSVG.addEventListener("mouseover", applyFill);
 heroSVG.addEventListener("mouseout", removeFill);
