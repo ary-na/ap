@@ -13793,6 +13793,7 @@ textarea.form-control-lg {
 
 html {
   background-color: var(--primary-color);
+  scroll-behavior: auto;
 }
 
 body {
