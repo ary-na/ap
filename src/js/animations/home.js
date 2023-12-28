@@ -26,7 +26,7 @@ gsap.to(heroSVG, {
         start: "top top",
         end: "bottom bottom",
         scrub: true,
-        delay: 0.2
+        delay: 0.5
     }
 })
 
@@ -38,7 +38,7 @@ gsap.to(heroLogo, {
         start: "top top",
         end: "bottom bottom",
         scrub: true,
-        delay: 0.2
+        delay: 0.5
     }
 })
 
@@ -82,5 +82,5 @@ gsap.to(".glass-container", {
     },
     y: 30,
     ease: "ease",
-    delay: 0.2
+    delay: 0.5
 })
