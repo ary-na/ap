@@ -10,7 +10,7 @@ const letterAEl = document.querySelector('.letter-a')
 heroSVGEl.addEventListener('mouseover', applyFill)
 heroSVGEl.addEventListener('mouseout', removeFill)
 
-function applyFill() {
+export function applyFill() {
     setElementFill(emptyEllipsesEl, "#f2f4f3")
     setElementFill(letterAEl, "#f2f4f3")
     setElementFill(frontRectangleEl, "#E3E8E5")
@@ -18,7 +18,7 @@ function applyFill() {
     setElementFill(backRectangleEl, "#f2f4f3")
 }
 
-function removeFill() {
+export function removeFill() {
     setElementFill(emptyEllipsesEl, "#15616d")
     setElementFill(letterAEl, "#15616d")
     setElementFill(frontRectangleEl, "#15616d")

@@ -1,5 +1,6 @@
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+import {applyFill, removeFill} from "./home"
 
 gsap.registerPlugin(ScrollTrigger)
 ScrollTrigger.config({ignoreMobileResize: true})
@@ -13,7 +14,9 @@ gsap.to('#heroSVG', {
         trigger: 'body',
         start: "top top",
         end: "bottom bottom",
-        scrub: true
+        scrub: true,
+        onUpdate: applyFill,
+        onToggle: removeFill
     }
 })
 
@@ -35,8 +38,8 @@ gsap.to(".glass-container", {
         trigger: '.glass-container',
         start: 'top center',
         end: 'bottom center',
-        scrub: true,
+        scrub: true
     },
     y: 30,
-    ease: "ease",
+    ease: "ease"
 })
