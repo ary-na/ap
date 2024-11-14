@@ -1,6 +1,6 @@
 {
   "name": "ap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This website is a portfolio showcasing my work.",
   "source": "src/index.html",
   "scripts": {
